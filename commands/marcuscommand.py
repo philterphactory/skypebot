@@ -8,7 +8,7 @@ class MarcusCommand( BaseCommand ):
 
 	def __init__(self):
 		BaseCommand.__init__( self )
-		self.command_mappings = [ "marcus", "kaiser" ]
+		self.command_mappings = [ "marcus", "kaiser", "Kaiser" ]
 		self.templates = [ 	Template("tells a story."),
 							Template("makes it transmedia."),
 							Template("is attacked by a turkey."),

@@ -2,10 +2,11 @@ from commands import pondercommand
 from commands import shoutoutcommand
 from commands import lspcommand
 from commands import commandscratch
+from commands import hankcommand
 
 
 # bullshit
-test_command = lspcommand.LspCommand()
+test_command = hankcommand.HankCommand()
 print test_command.generate( "shardcore" )
 
 # ponder

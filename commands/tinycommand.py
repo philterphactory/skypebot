@@ -24,6 +24,7 @@ class TinyCommand( BaseCommand ):
                             Template("is swept up in a tsunami of brownian motion"),
                             Template("shrinks $name in the hot wash"),
                             Template("rides in on a flea"),
+                            Template("thermal prints a tiny Hitler face."),
                             Template("hides from the big kids on the big web"),
                             Template("takes $name into a secret room, even tinier than this one"),
                             Template("complains that this matchbox is too roomy"),
