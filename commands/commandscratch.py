@@ -24,7 +24,8 @@ class ChillCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "chill" ]
-        self.templates = [  Template("tells $name to chill the fuck out.") ]
+        self.templates = [  Template("tells $name to chill the fuck out."),
+                            Template("tells the !Kaiser to chill the fuck out.") ]
 
     def generate( self, name ):
         template = random.choice( self.templates )
