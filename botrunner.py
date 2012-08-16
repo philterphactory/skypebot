@@ -63,8 +63,12 @@ try:
                     logging.info( "Recieved push notification on branch %s..." % ref )
                     if GIT_BRANCH and (GIT_BRANCH==ref):
                         # construct quit messge for bot
-                        commits = hookserver_message.payload[ 'commits' ]
-                        commit_author = commits[0]['author']['name']
+                        commit_author = "A ghost"
+                        try:
+                            commits = hookserver_message.payload[ 'commits' ]
+                            commit_author = commits[0]['author']['name']
+                        except Exception, e:
+                            logging.info( e )
                         message_out = housekeeping.update_message_for_name( commit_author )
                         bot_thread.stop( message_out )
                         bot_thread = None
