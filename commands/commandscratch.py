@@ -29,7 +29,7 @@ class ChillCommand( BaseCommand ):
                             Template("can see that $name is already very chilled and tells the !Kaiser to chill the fuck out."),
                             Template("bars $name for being too punchy."),
                             Template("puts $name on the special un-chill list."),
-                            Template("pours everyone a !drink, on the house."),
+                            Template("pours everyone a !drink, on the house.")
                             ]
 
     def generate( self, name ):
