@@ -12,7 +12,8 @@ class DorisCommand( BaseCommand ):
                             Template("drinks !satan under the table."),
                             Template("goes for a road trip."),
                             Template("drinks !satan under the table."),
-                            Template("does the deckless !dovehand.") ]
+                            Template("does the deckless !dovehand."),
+                            Template("reminds you of the Trojan Unicorn.") ]
 
     def generate( self, name ):
         template = random.choice( self.templates )
