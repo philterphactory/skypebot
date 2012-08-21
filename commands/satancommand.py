@@ -22,6 +22,9 @@ class SatanCommand( BaseCommand ):
                             Template("shuffles to some botstep."),
                             Template("is listening to the director's commentary on Blade Runner."),
                             Template("is in Act 2, Stage IV: atonement with the father."),
+                            Template("conference calls the whole internet."),
+                            Template("upsets the !kaiser."),
+                            Template("embraces a stranger on a railway platform."),
                             Template("rolls up.") ]
                             
     def generate( self, name ):
