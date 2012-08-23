@@ -41,10 +41,13 @@ class PeterCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "peter", "pit" ]
+        self.command_mappings = [ "peter", "pit", "bihr" ]
         self.templates = [  Template("invites $name to a conference."),
                             Template("has hours of panels to fill."),
-                            Template("assembles the band")                            
+                            Template("assembles the band"),
+                            Template("gets the bar into SXSW."),
+                            Template("fires up his !prezi"),
+                            Template("goes solo")                            
                             ]
 
     def generate( self, name ):
