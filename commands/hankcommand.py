@@ -31,6 +31,7 @@ class HankCommand( BaseCommand ):
                             Template("puts on his leather apron."),
                             Template("pretends to be his dad"),
                             Template("gouges himself with a post-commit hook"),
+                            Template("misses his flight."),
                             Template("wears some skinny jeans") ]
                             
     def generate( self, name ):
