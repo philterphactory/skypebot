@@ -52,6 +52,7 @@ class DrinkCommand( BaseCommand ):
                    "a mouldy",
                    "a horny",
                    "a disabled",
+                   "a QR code engraved",
                    "a Jubilee-edition",
                    "a Chinese interpretation of",
                    "an over-strength",
@@ -167,6 +168,19 @@ class DrinkCommand( BaseCommand ):
             "Chartreuse",
             "Jägermeister",
             "Obstler",
+            "Satan's Bier",
+            "Markov Fine Lager",
+            "Markov Fine Lager - Extra Splashy", 
+            "Markov Fine Lager - Extra Splishy",
+            "Markov Fine Lager - Extra !w3t",
+            "Markov Fine Lager with a pixel twist",
+            "Glitch",
+            "Glitch !Bacon Flavour",
+            "Glitch !Cheese And Onion Flavour",
+            "Glitch !w3t",
+            "Glitch !Ponder Edition",
+            "Tiny",      
+            "Slurp",     
             "Peppermint Schnaps" ]
 
     def generate( self, name ):

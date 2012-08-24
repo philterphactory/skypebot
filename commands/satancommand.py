@@ -20,8 +20,23 @@ class SatanCommand( BaseCommand ):
                             Template("exhales a thick fug."),
                             Template("cooks up a nice batch of wasabi dumplings."),
                             Template("shuffles to some botstep."),
+                            Template("is buying coupons."),
+                            Template("delivers a sermon."),
+                            Template("doesn't speak the language."),
+                            Template("knows three facts about Berlin."),
+                            Template("makes everyone buy a shit sausage."),
+                            Template("is responsible for this mess."),
+                            Template("fails to introduce anyone."),
+                            Template("smuggles in some prohibition."),
+                            Template("buys all the Club Mate. Mate, mate."),
+                            Template("takes the laissez-faire approach to moderating."),
+                            Template("avoids eye contact with the seat warmers."),
+                            Template("is sitting on the waterfront."),
                             Template("is listening to the director's commentary on Blade Runner."),
                             Template("is in Act 2, Stage IV: atonement with the father."),
+                            Template("conference calls the whole internet."),
+                            Template("upsets the !kaiser."),
+                            Template("embraces a stranger on a railway platform."),
                             Template("rolls up.") ]
                             
     def generate( self, name ):
