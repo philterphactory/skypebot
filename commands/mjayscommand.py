@@ -11,6 +11,8 @@ class MjaysCommand( BaseCommand ):
         self.command_mappings = [ "mjays", "spindler", "spider" ]
         self.templates = [  Template("is clearly the biggest !hipster."),
                             Template("looks different in Real Life."),
+                            Template("zooms in on a Peugeot."),
+                            Template("yells !drink in a stranger's face."),
                             Template("pulls an internet out of his arse."),
                             Template("adds a command from the pub.")
                             ]
