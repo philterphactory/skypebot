@@ -52,7 +52,7 @@ class PhotoshopCommand( BaseCommand ):
                             Template("knows the photoshopped clocks are photoshopped wrong."),
                             Template("feels the photoshopped days are photoshopped long."),
                             Template("accepts that it photoshopped gets you photoshopped down."),
-                            Template("evidently photoshop town."),
+                            Template("is evidently photoshop town."),
                             ]
 
     def generate( self, name ):
