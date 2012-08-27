@@ -25,6 +25,7 @@ class ShardcoreCommand( BaseCommand ):
                             Template("is an artist, from Brighton."),
                             Template("misses the real world."),
                             Template("doesn't have a face."),
+                            Template("gets censored by FOX."),
                             Template("draws a face on his cock-tip."),
                             Template("has declared world domination of techno sleaze has is ultimate goal."),
                             Template("has a serious chat with the cleaning lady.") ]
