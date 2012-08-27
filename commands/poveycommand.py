@@ -28,6 +28,14 @@ class PoveyCommand( BaseCommand ):
                             Template("nips out the back to catch up with the wrestling"),
                             Template("was on the best seat in the bus this morning"),
                             Template("asks if people do karaoke in Sheffield"),
+                            Template("skips three slides because he can't be bothered"),
+                            Template("doesn't want to do it anymore"),
+                            Template("doesn't like the currywurst"),
+                            Template("moans about the coupons"),
+                            Template("snores like a bastard"),
+                            Template("does a diva right in the middle of something"),
+                            Template("doesn't remember the film being this long"),
+                            Template("is annoyed by the quality of sound"),                            
                             Template("calls $name a divvy")
                             ]
                             
