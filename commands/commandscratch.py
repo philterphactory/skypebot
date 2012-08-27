@@ -47,6 +47,12 @@ class CampusCommand( BaseCommand ):
                             Template("bans all the booze"),
                             Template("makes a bloody killing on coupons"),
                             Template("makes $name a V.I.P."),
+                            Template("does an unconference."),
+                            Template("stinks of dev B.O."),
+                            Template("does a crane shot."),
+                            Template("plays all the noises."),
+                            Template("is weirded out by the robots everywhere."),
+                            Template("picks up some groupies."),
                             Template("messes about with the sound levels")
                             ]
 
