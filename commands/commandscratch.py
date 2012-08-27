@@ -36,6 +36,24 @@ class ChillCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
+        
+class CampusCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "campus" ]
+        self.templates = [  Template("is confused by all the noise"),
+                            Template("wonders where everybody has gone"),
+                            Template("bans all the booze"),
+                            Template("makes a bloody killing on coupons"),
+                            Template("makes $name a V.I.P."),
+                            Template("messes about with the sound levels")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
 
 class PeterCommand( BaseCommand ):
 
