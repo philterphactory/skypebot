@@ -14,6 +14,9 @@ class MjaysCommand( BaseCommand ):
                             Template("zooms in on a Peugeot."),
                             Template("yells !drink in a stranger's face."),
                             Template("pulls an internet out of his arse."),
+                            Template("is like, totally V.I.P. in your face, ja?"),
+                            Template("has a nice pair of sunglasses"),
+                            Template("is potentially a ladies man."),
                             Template("adds a command from the pub.")
                             ]
 
