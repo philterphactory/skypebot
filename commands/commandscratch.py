@@ -60,6 +60,21 @@ class CampusCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
+        
+class GangnamCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "gangnam" ]
+        self.templates = [  Template("(lalala)"),
+                            Template("(tmi)"),
+                            Template("(\o/)")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out        
 
 class PeterCommand( BaseCommand ):
 
