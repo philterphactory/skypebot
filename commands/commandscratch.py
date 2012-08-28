@@ -33,7 +33,30 @@ class GangnamCommand( BaseCommand ):
     def generate( self, name ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
-        return "/me %s" % message_out        
+        return "/me %s" % message_out
+        
+class VendorCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "vendor" ]
+        self.templates = [  Template("overlooked $name's email"),
+                            Template("goes to voicemail"),
+                            Template("tells $name to read the bloody small print"),
+                            Template("underestimated the scope of it all"),
+                            Template("is launching another clients website"),
+                            Template("can fit $name in next Tuesday, maybe."),
+                            Template("never said he could actually implement it"),
+                            Template("also has subcontracters"),
+                            Template("has fucked up the supply chain"),
+                            Template("can fit $name in next Tuesday, maybe."),
+                            Template("wonders why $name is getting his knickers in a twist about the invoice")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out            
 
 class PeterCommand( BaseCommand ):
 
