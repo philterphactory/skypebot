@@ -121,7 +121,10 @@ class ClientCommand( BaseCommand ):
                             Template("delays decisions."),
                             Template("has partners to satisfy."),
                             Template("has lost not read the spec."),
-                            Template("forgets about the British bank holidays.")
+                            Template("forgets about the British bank holidays."),
+                            Template("insists that the logo be bigger."),
+                            Template("can't see it on their iPad."),
+                            Template("changes his mind.")
                             ]
 
     def generate( self, name ):
