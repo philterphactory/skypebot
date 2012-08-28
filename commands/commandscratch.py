@@ -35,6 +35,21 @@ class GangnamCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
         
+class AnusCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "anus" ]
+        self.templates = [  Template("(moon)"),
+                            Template("yadda yadda yadda"),
+                            Template("well massive")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+        
 class VendorCommand( BaseCommand ):
 
     def __init__(self):
