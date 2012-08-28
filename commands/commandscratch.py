@@ -41,8 +41,8 @@ class AnusCommand( BaseCommand ):
         BaseCommand.__init__( self )
         self.command_mappings = [ "anus" ]
         self.templates = [  Template("(moon)"),
-                            Template("yadda yadda yadda"),
-                            Template("well massive")
+                            Template("goes all yadda yadda yadda"),
+                            Template("looks at a picture of !satan")
                             ]
 
     def generate( self, name ):
