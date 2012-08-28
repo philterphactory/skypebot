@@ -10,7 +10,7 @@ class CockCommand( BaseCommand ):
 
         BaseCommand.__init__( self )
 
-        self.command_mappings = [ "cock", "cunt" ]
+        self.command_mappings = [ "cock" ]
         self.tweets = False
 
         self.templates = [  Template("magnificently glitches $name $drink all over Gregory Povey who now looks peeved. #time #cock"),
