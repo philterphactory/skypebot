@@ -68,6 +68,9 @@ class VendorCommand( BaseCommand ):
                             Template("can fit $name in next Tuesday, maybe."),
                             Template("mutters something about scope creep."),
                             Template("gets the receptionist to answer the phone."),
+                            Template("is still waiting for the bloody copy"),
+                            Template("has kind of gone bankrupt"),
+                            Template("has a bit of a cash flow problem"),
                             Template("wonders why $name is getting his knickers in a twist about the invoice")
                             ]
 
