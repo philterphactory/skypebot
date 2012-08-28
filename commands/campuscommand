@@ -1,0 +1,28 @@
+# coding=UTF-8
+from string import Template
+import random
+from commandbase import BaseCommand
+
+class CampusCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "campus" ]
+        self.templates = [  Template("is confused by all the noise"),
+                            Template("wonders where everybody has gone"),
+                            Template("bans all the booze"),
+                            Template("makes a bloody killing on coupons"),
+                            Template("makes $name a V.I.P."),
+                            Template("does an unconference."),
+                            Template("stinks of dev B.O."),
+                            Template("does a crane shot."),
+                            Template("plays all the noises."),
+                            Template("is weirded out by the robots everywhere."),
+                            Template("picks up some groupies."),
+                            Template("messes about with the sound levels")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
