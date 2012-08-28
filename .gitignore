@@ -10,3 +10,6 @@ skypebot.log
 tmp/
 twitter_tester.log
 radio_url
+
+*.sublime-project
+*.sublime-workspace
