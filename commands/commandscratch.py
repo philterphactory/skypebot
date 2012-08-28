@@ -110,3 +110,21 @@ class FreudCommand( BaseCommand ):
         return "/me %s" % message_out
         
 
+class ClientCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "client" ]
+        self.templates = [  Template("asks $name if they could make a microsite to go with the project."),
+                            Template("requests that $name just make some !tiny changes. It won't take long."),
+                            Template("has run out of budget."),
+                            Template("delays decisions."),
+                            Template("has partners to satisfy."),
+                            Template("has lost not read the spec."),
+                            Template("forgets about the British bank holidays.")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
