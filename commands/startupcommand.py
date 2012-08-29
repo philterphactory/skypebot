@@ -18,10 +18,16 @@ class StartupCommand( BaseCommand ):
                             Template("fantasizes about being featured on TechCrunch."),
                             Template("can’t seem to find any talent."),
                             Template("pitches $name while they pee."),
-                            Template("is super excited about that new js framework (or was that rub?)"),
+                            Template("is super excited about that new js framework (or was that ruby?)"),
                             Template("is going to change the world with his Daily Deals site."),
                             Template("got a solid friends & family round from $name\'s Grandma."),
-                            Template("doesn\'t wash the hand that shook Mike Butcher\'s.")
+                            Template("doesn\'t wash the hand that shook Mike Butcher\'s."),
+                            Template("is absolutely certain that this year, he\'ll really get into the YC class."),
+                            Template("has only founded his startup to have an excuse to hang out at the roundabout."),
+                            Template("wonder\'s who\'ll be the next Groupon."),
+                            Template("complains about German copycats."),
+                            Template("has a golden ticket for a tour of the Clone Factory."),
+                            Template("is looking for rockstar-ninja-guru developers.")
                             ]
 
     def generate( self, name ):
