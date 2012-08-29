@@ -21,7 +21,7 @@ class StartupCommand( BaseCommand ):
                             Template("is super excited about that new js framework (or was that rub?)"),
                             Template("is going to change the world with his Daily Deals site."),
                             Template("got a solid friends & family round from $name\'s Grandma."),
-                            Template("doesn\'t wash the hand that shook Mike Butcher\'s")
+                            Template("doesn\'t wash the hand that shook Mike Butcher\'s.")
                             ]
 
     def generate( self, name ):
