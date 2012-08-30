@@ -85,6 +85,8 @@ class GoonCommand( BaseCommand ):
                             Template("rotates his head, crunching his bones."),
                             Template("is wearing a donkey jacket."),
                             Template("tells $name to behave."),
+                            Template("has a picture of $name's family."),
+                            Template("thinks $name has a nice place here. Be a shame if anything happened to it."),
                             Template("suggests that $name should know what's good for them."),
                             Template("mutters something vaguely menacing in a gravelly voice to $name.")
                             ]
