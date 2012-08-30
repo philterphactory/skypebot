@@ -70,3 +70,19 @@ class PeterCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+
+class GoonCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "goon" ]
+        self.templates = [  Template("leans on $name."),
+                            Template("kneecaps $name"),
+                            Template("mutters something vaguely menacing in a gravelly voice to $name.")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
