@@ -77,7 +77,15 @@ class GoonCommand( BaseCommand ):
         BaseCommand.__init__( self )
         self.command_mappings = [ "goon" ]
         self.templates = [  Template("leans on $name."),
-                            Template("kneecaps $name"),
+                            Template("kneecaps $name."),
+                            Template("asks $name to take a seat."),
+                            Template("cracks his knuckles."),
+                            Template("flashes a toothless grin at $name."),
+                            Template("doesn't have a neck."),
+                            Template("rotates his head, crunching his bones."),
+                            Template("is wearing a donkey jacket."),
+                            Template("tells $name to behave."),
+                            Template("suggests that $name should know what's good for them."),
                             Template("mutters something vaguely menacing in a gravelly voice to $name.")
                             ]
 
