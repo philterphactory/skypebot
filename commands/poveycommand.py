@@ -36,6 +36,8 @@ class PoveyCommand( BaseCommand ):
                             Template("does a diva right in the middle of something"),
                             Template("doesn't remember the film being this long"),
                             Template("is annoyed by the quality of sound"),                            
+                            Template("makes a dry northern comment"),
+                            Template("fucks off and buys some obscure 7 inches."),                                                        
                             Template("calls $name a divvy")
                             ]
                             

@@ -55,6 +55,7 @@ class MarcusCommand( BaseCommand ):
 							Template("talks for 17 minutes, poorly."),
 							Template("sells $name some used web."),
 							Template("charts a story."),
+					                Template("goes to work on his !tiny farmyard."),
 							Template("ponders the notion he could be an !adman.")
 							]
 							

@@ -17,7 +17,12 @@ class MjaysCommand( BaseCommand ):
                             Template("is like, totally V.I.P. in your face, ja?"),
                             Template("has a nice pair of sunglasses"),
                             Template("is potentially a ladies man."),
-                            Template("adds a command from the pub.")
+                            Template("adds a command from the pub."),
+                            Template("has a better fixie than !hank."),
+                            Template("adds the internet to a thing."),
+                            Template("talks passionately about the intenet of things."),
+                            Template("secretly looks up a popular culture reference he missed as a kid."),
+                            Template("unexpectedly cuts off all his hair")
                             ]
 
     def generate( self, name ):
