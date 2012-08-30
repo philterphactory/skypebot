@@ -104,3 +104,29 @@ class GoonCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+class LoonCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "loon", "mad" ]
+        self.templates = [  Template("wears a foil !hat."),
+                            Template("has mercury poisoning."),
+                            Template("believes David Icke."),
+                            Template("talks to himself."),
+                            Template("hasn't washed for weeks."),
+                            Template("doesn't trust the barge folk."),
+                            Template("has all his money in carrier bags under the bed."),
+                            Template("is concerned about all the lizards."),
+                            Template("is carrying a copy of Catcher In The Rye."),
+                            Template("cuts out bits of newspapers for his scrapbooks."),
+                            Template("is still listening to !gangnam."),
+                            Template("is late for a !tea party."),
+                            Template("thinks $name has stolen his thoughts."),
+                            Template("is called Bobbin. Are you my mother?")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
