@@ -50,6 +50,25 @@ class AnusCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
         
+        
+class CEOCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "ceo", "chief" ]
+            self.templates = [  Template("thinks profit is for posers"),
+                            Template("believes that it's not about the cash in the bank, it's all about the 'length of the runway'."),
+                            Template("thinks this time next year, we'll be millionaires."),
+                            Template("is spending money to make money."),
+                            Template("is wearing a suit jacket and jeans."),
+                            Template("spunked all the company's money on shiny leather upholstery."),
+                            Template("has a terrific burn-rate")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out        
 
 
 class PeterCommand( BaseCommand ):
