@@ -64,12 +64,14 @@ try:
                     if GIT_BRANCH and (GIT_BRANCH==ref):
                         # construct quit messge for bot
                         commit_author = "A ghost"
+                        commit_message = "mysterious games"
                         try:
                             commits = hookserver_message.payload[ 'commits' ]
                             commit_author = commits[0]['author']['name']
+                            commit_message = commits[0]['message']
                         except Exception, e:
                             logging.info( e )
-                        message_out = housekeeping.update_message_for_name( commit_author )
+                        message_out = housekeeping.update_message_for_name( commit_author, commit_message )
                         bot_thread.stop( message_out )
                         bot_thread = None
                         # drop to outer loop; restart bot_thread
