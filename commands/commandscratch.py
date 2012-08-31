@@ -51,7 +51,7 @@ class AnusCommand( BaseCommand ):
         return "/me %s" % message_out
         
         
-class CEOCommand( BaseCommand ):
+class CeoCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
