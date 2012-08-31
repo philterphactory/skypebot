@@ -51,11 +51,11 @@ class AnusCommand( BaseCommand ):
         return "/me %s" % message_out
         
         
-class CeoCommand( BaseCommand ):
+class BossCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "ceo", "chief" ]
+        self.command_mappings = [ "ceo", "chief", "boss" ]
             self.templates = [  Template("thinks profit is for posers"),
                             Template("believes that it's not about the cash in the bank, it's all about the 'length of the runway'."),
                             Template("thinks this time next year, we'll be millionaires."),
