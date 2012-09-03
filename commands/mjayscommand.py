@@ -25,6 +25,7 @@ class MjaysCommand( BaseCommand ):
                             Template("unexpectedly cuts off all his hair")
                             ]
 
+
     def generate( self, name ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
