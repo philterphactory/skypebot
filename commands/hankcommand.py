@@ -21,6 +21,7 @@ class HankCommand( BaseCommand ):
                             Template("hacks a teddy bear"),
                             Template("grows the biggest beard"),
                             Template("fixes Landy."),
+                            Template("is on the spectrum."),
                             Template("eats a microphone."),
                             Template("maintains the !Landlord."),
                             Template("gets lost on public transport."),
