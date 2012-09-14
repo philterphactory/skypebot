@@ -60,7 +60,31 @@ class TrialCommand( BaseCommand ):
     def generate( self, name ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
-        return "/me %s" % message_out        
+        return "/me %s" % message_out     
+        
+        
+class ChickenTownCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "chickentown" ]
+        self.templates = [  Template("says the fucking beer is fucking fucked"),
+                            Template("knows the fucking crisps are fucking old"),
+                            Template("wants the fucking punters off his fucking back"),
+                            Template("smells the fucking dope in the fucking bogs"),
+                            Template("pours a fucking !drink for the fucking lads"),                                
+                            Template("mops the fucking floor with a fucking mop"),
+                            Template("cleans the fucking glasses with some fucking water"),
+                            Template("flicks some fucking peanuts in $name’s fucking glass"),
+                            Template("plays some fucking darts with the fucking some fucking darts"),
+                            Template("serves a fucking !snack to the fucking law")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out 
+        
         
         
 class ShootoutCommand( BaseCommand ):
