@@ -48,7 +48,7 @@ lass ShootoutCommand( BaseCommand ):
                             Template("blows the smoke away from his invisible barrel."),
                             Template("spins his pretend revolver."),
                             Template("adjusts his ten-gallon hat."),
-                            Template("holsters his pistol."),
+                            Template("holsters his pistol.")
                             ]
 
     def generate( self, name ):
