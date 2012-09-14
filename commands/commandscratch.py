@@ -36,7 +36,7 @@ class GangnamCommand( BaseCommand ):
         return "/me %s" % message_out
         
         
-lass ShootoutCommand( BaseCommand ):
+Class ShootoutCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
