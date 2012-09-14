@@ -35,6 +35,27 @@ class GangnamCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
         
+        
+lass ShootoutCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "shootout" ]
+        self.templates = [  Template("does gun fingers at $name."),
+                            Template("makes a machine gun noise with his mouth."),
+                            Template("turns around in slow motion."),
+                            Template("reloads."),
+                            Template("blows the smoke away from his invisible barrel."),
+                            Template("spins his pretend revolver."),
+                            Template("adjusts his ten-gallon hat."),
+                            Template("holsters his pistol."),
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
 class AnusCommand( BaseCommand ):
 
     def __init__(self):
