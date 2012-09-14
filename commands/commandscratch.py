@@ -42,6 +42,9 @@ class TrialCommand( BaseCommand ):
         self.command_mappings = [ "trial" ]
         self.templates = [  Template("asks $name to leave, never to return"),
                             Template("thinks that it's OK for $name to stay a little while longer"),
+                            Template("doesn't like Kafka"),
+                            Template("gets the bouncers onto $name"),
+                            Template("calls his Mafia mates"),                                
                             Template("gives $name a perminent Phactory Bar green card ")
                             ]
 
