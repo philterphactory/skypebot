@@ -40,12 +40,21 @@ class TrialCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "trial" ]
-        self.templates = [  Template("asks $name to leave, never to return"),
-                            Template("thinks that it's OK for $name to stay a little while longer"),
-                            Template("doesn't like Kafka"),
-                            Template("gets the bouncers onto $name"),
-                            Template("calls his Mafia mates"),                                
-                            Template("gives $name a perminent Phactory Bar green card ")
+        self.templates = [  Template("asks $name to leave, never to return."),
+                            Template("thinks that it's OK for $name to stay a little while longer."),
+                            Template("doesn't like Kafka."),
+                            Template("gets the bouncers onto $name."),
+                            Template("calls his Mafia mates."),
+                            Template("has rigged the jury against $name."),
+                            Template("makes $name a straw man."),
+                            Template("is wearing a wig."),
+                            Template("dozed off."),
+                            Template("bonks $name on the head with his gavel."),
+                            Template("thinks Facebook is a more suitable environ for $name."),
+                            Template("asks $name to bugger off to LambdaMOO."),
+                            Template("is involved in a bit of extraordinary rendition of $name."),
+                            Template("invades the Ecuadorian embassy to extradite $name."),
+                            Template("gives $name a perminent Phactory Bar green card.")
                             ]
 
     def generate( self, name ):
