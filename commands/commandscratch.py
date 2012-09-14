@@ -35,6 +35,21 @@ class GangnamCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
         
+class TrialCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "trial" ]
+        self.templates = [  Template("asks $name to leave, never to return"),
+                            Template("thinks that it's OK for $name to stay a little while longer"),
+                            Template("gives $name a perminent Phactory card green card ")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out        
+        
         
 class ShootoutCommand( BaseCommand ):
 
