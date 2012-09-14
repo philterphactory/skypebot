@@ -9,7 +9,7 @@ class AdmanCommand( BaseCommand ):
           
           BaseCommand.__init__( self )
 
-          self.command_mappings = [ "adman" ]
+          self.command_mappings = [ "adman", "tony" ]
 
           self.templates = [  Template("does a brand onion for $name."),
                     Template("leverages key influencers."),
@@ -42,6 +42,7 @@ class AdmanCommand( BaseCommand ):
                     Template("dabbles with Flash."),
                     Template("makes a mood film."),
                     Template("loves OK Go."),
+                    Template("is waiting for a connecting flight."),
                     Template("is handling Slough."),
                     Template("is in Portland."),
                     Template("is at Nike Town."),
