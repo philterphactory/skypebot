@@ -181,7 +181,8 @@ class DrinkCommand( BaseCommand ):
             "Glitch !Ponder Edition",
             "Tiny",      
             "Slurp",     
-            "Peppermint Schnaps" ]
+            "Peppermint Schnaps",
+            "Fernet Branca" ]
 
     def generate( self, name ):
         drink = random.choice( self.drinks )
