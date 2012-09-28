@@ -28,7 +28,8 @@ class TinyCommand( BaseCommand ):
                             Template("hides from the big kids on the big web"),
                             Template("takes $name into a secret room, even tinier than this one"),
                             Template("complains that this matchbox is too roomy"),
-                            Template("dances to Ant Music.") ]
+                            Template("dances to Ant Music."),
+                            Template("reminds $name that a !tiny picture on a !tiny wall is not the big picture") ]
 
     def generate( self, name ):
         template = random.choice( self.templates )
