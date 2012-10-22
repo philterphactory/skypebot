@@ -22,6 +22,8 @@ class AdmanCommand( BaseCommand ):
                     Template("puts a hashtag on the telly."),
                     Template("tells his mum he works in retail."),
                     Template("holds a focus group."),
+                    Template("is wearing an urban tactical assault jacket."),
+                    Template("is on a military-style bicycle."),
                     Template("is briefing at 1100h."),
                     Template("is totally slammed with meetings all day."),
                     Template("is the first in the office and the last to leave."),
