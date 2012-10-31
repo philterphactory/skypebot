@@ -4,10 +4,11 @@ from commands import lspcommand
 from commands import commandscratch
 from commands import hankcommand
 from commands import regretscommand
+from commands import ballcommand
 
 
 # bullshit
-test_command = regretscommand.RegretsCommand()
+test_command = ballcommand.BallCommand()
 print test_command.generate( "shardcore" )
 
 # ponder
