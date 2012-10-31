@@ -28,6 +28,8 @@ class MarcusCommand( BaseCommand ):
 							Template("is dating Pambot."),
 							Template("thinks Marcus has got a little bit carried away using his ego-command."),
 							Template("giggles."),
+							Template("Skypes from the pub."),
+							Template("hates tellycuntery."),
 							Template("gets an early night."),
 							Template("is listening to self-help ebooks."),
 							Template("tells !satan off for his habit."),

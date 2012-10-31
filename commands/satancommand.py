@@ -36,6 +36,10 @@ class SatanCommand( BaseCommand ):
                             Template("is in Act 2, Stage IV: atonement with the father."),
                             Template("conference calls the whole internet."),
                             Template("upsets the !kaiser."),
+                            Template("massages the data."),
+                            Template("wears a thong."),
+                            Template("is shopping for kilts."),
+                            Template("spreads some !love."),
                             Template("embraces a stranger on a railway platform."),
                             Template("rolls up.") ]
                             
