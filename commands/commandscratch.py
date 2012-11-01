@@ -236,12 +236,16 @@ class MynewCommand( BaseCommand ):
             "Spatial Complexity",
             "Loving Spoonful",
             "Braun Zucker",
+            "Algorithmic Data Massage",
+            "New Aesthetic Fashion",
+            "Financial Jiu Jitsu",
             "Culture Jam",
             "Cube Farm",
             "Beanbag Office",
             "Stress Puppy",
             "Food Stamps",
             "Seagull Management",
+            "Ninja Central",
             "Billy Cosby Sweater Design" ]
 
     def generate( self, name ):
