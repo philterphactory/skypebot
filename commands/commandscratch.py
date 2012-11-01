@@ -223,7 +223,7 @@ class MynewCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "mynew", "new" ]
-        self.templates = [  Template("understands that $name's new $startup is called $word.") ]
+        self.templates = [  Template("understands that $name's new $startup is called \"$word\".") ]
         self.startup = [ "startup",
             "thing",
             "product",
@@ -251,6 +251,7 @@ class MynewCommand( BaseCommand ):
             "Handsome Adult",
             "Bereaved Objects",
             "Absolute Nothingness",
+            "Don\'t ruin a good story with numbers!",
             "Pipe Bomb",
             "True Say",
             "$startup",
@@ -260,6 +261,9 @@ class MynewCommand( BaseCommand ):
             "Engagement Metrics",
             "Barry",
             "Piss und Shit",
+            "Creative Technologisms",
+            "Dedicated Solutioneering",
+            "Don\'t Call It a $startup",
             "Blended Synergy",
             "Billy Cosby Sweater Design" ]
 
@@ -267,7 +271,8 @@ class MynewCommand( BaseCommand ):
         startup = random.choice( self.startup )
         word = random.choice( self.word )
         template = random.choice( self.templates )
-        message_out = template.substitute(name=name, startup=startup, word=word)
+        template = template.substitute(word=word)
+        message_out = template.substitute(name=name, startup=startup)
         return "/me %s" % message_out
     
 
