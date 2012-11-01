@@ -271,8 +271,7 @@ class MynewCommand( BaseCommand ):
         startup = random.choice( self.startup )
         word = random.choice( self.word )
         template = random.choice( self.templates )
-        template = template.substitute(word=word)
-        message_out = template.substitute(name=name, startup=startup)
+        message_out = template.substitute(word=word, name=name, startup=startup)
         return "/me %s" % message_out
     
 
