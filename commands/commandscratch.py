@@ -225,6 +225,7 @@ class MynewCommand( BaseCommand ):
         self.command_mappings = [ "mynew", "new" ]
         self.templates = [  Template("understands that $name's new $startup is called $word.") ]
         self.startup = [ "startup",
+            "thing",
             "product",
             "habit",
             "position",
@@ -252,6 +253,7 @@ class MynewCommand( BaseCommand ):
             "Absolute Nothingness",
             "Pipe Bomb",
             "True Say",
+            "$startup",
             "Handspeed Record",
             "Stealth Made",
             "Broken Windows",
