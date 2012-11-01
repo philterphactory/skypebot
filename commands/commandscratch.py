@@ -232,46 +232,48 @@ class MynewCommand( BaseCommand ):
             "desire",
             "beau" ]
 
-        self.word = [ "Social Media Narcissism",
-            "Guru Zentrum",
-            "Corporate Density",
-            "Spatial Complexity",
-            "Loving Spoonful",
-            "Braun Zucker",
-            "Algorithmic Data Massage",
-            "New Aesthetic Fashion",
-            "Financial Jiu Jitsu",
-            "Culture Jam",
-            "Cube Farm",
-            "Beanbag Office",
-            "Stress Puppy",
-            "Food Stamps",
-            "Seagull Management",
-            "Ninja Central",
-            "Handsome Adult",
-            "Bereaved Objects",
-            "Absolute Nothingness",
-            "Don\'t ruin a good story with numbers!",
-            "Pipe Bomb",
-            "True Say",
-            "$startup",
-            "Handspeed Record",
-            "Stealth Made",
-            "Broken Windows",
-            "Engagement Metrics",
-            "Barry",
-            "Piss und Shit",
-            "Creative Technologisms",
-            "Dedicated Solutioneering",
-            "Don\'t Call It a !startup",
-            "Blended Synergy",
-            "Billy Cosby Sweater Design" ]
+        self.word = [
+            # Template("Social Media Narcissism"),
+            # Template("Guru Zentrum"),
+            # Template("Corporate Density"),
+            # Template("Spatial Complexity"),
+            # Template("Loving Spoonful"),
+            # Template("Braun Zucker"),
+            # Template("Algorithmic Data Massage"),
+            # Template("New Aesthetic Fashion"),
+            # Template("Financial Jiu Jitsu"),
+            # Template("Culture Jam"),
+            # Template("Cube Farm"),
+            # Template("Beanbag Office"),
+            # Template("Stress Puppy"),
+            # Template("Food Stamps",
+            # Template("Seagull Management"),
+            # Template("Ninja Central"),
+            # Template("Handsome Adult"),
+            # Template("Bereaved Objects"),
+            # Template("Absolute Nothingness"),
+            # Template("Don\'t ruin a good story with numbers!"),
+            # Template("Pipe Bomb"),
+            # Template("True Say"),
+            Template("$startup"),
+            # Template("Handspeed Record"),
+            # Template("Stealth Made"),
+            # Template("Broken Windows)",
+            # Template("Engagement Metrics"),
+            # Template("Barry"),
+            # Template("Piss und Shit"),
+            # Template("Creative Technologisms"),
+            # Template("Dedicated Solutioneering"),
+            Template("Don\'t Call It a $startup")]
+            # Template("Blended Synergy"),
+            # Template("Billy Cosby Sweater Design") ]
 
     def generate( self, name ):
         startup = random.choice( self.startup )
         word = random.choice( self.word )
+        template_word=template.substitute(startup=startup)
         template = random.choice( self.templates )
-        message_out = template.substitute(word=word,name=name, startup=startup)
+        message_out = template.substitute(word=template_word,name=name, startup=startup)
         return "/me %s" % message_out
     
 
