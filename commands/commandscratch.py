@@ -222,11 +222,12 @@ class MynewCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "mynew" ]
+        self.command_mappings = [ "mynew", "new" ]
         self.templates = [  Template("understands that $name's new $startup is called $word.") ]
         self.startup = [ "startup",
             "product",
             "habit",
+            "position",
             "desire",
             "beau" ]
 
@@ -246,6 +247,18 @@ class MynewCommand( BaseCommand ):
             "Food Stamps",
             "Seagull Management",
             "Ninja Central",
+            "Handsome Adult",
+            "Bereaved Objects",
+            "Absolute Nothingness",
+            "Pipe Bomb",
+            "True Say",
+            "Handspeed Record",
+            "Stealth Made",
+            "Broken Windows",
+            "Engagement Metrics",
+            "Barry",
+            "Piss und Shit",
+            "Blended Synergy",
             "Billy Cosby Sweater Design" ]
 
     def generate( self, name ):
