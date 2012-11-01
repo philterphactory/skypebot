@@ -223,7 +223,7 @@ class MynewCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "mynew" ]
-        self.templates = [  Template("understands that $name's new $startup is called "$word".") ]
+        self.templates = [  Template("understands that $name's new $startup is called $word.") ]
         self.startup = [ "startup",
             "product",
             "habit",
