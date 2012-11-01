@@ -218,3 +218,47 @@ class LoonCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+# coding=UTF-8
+
+from string import Template
+import random
+from commandbase import BaseCommand
+
+class MynewCommand( BaseCommand ):
+
+    def __init__(self):
+        
+        BaseCommand.__init__( self )
+
+        self.command_mappings = [ "mynew" ]
+
+        self.templates = [  Template("understands that $name's new $startup is called "$word".") ]
+        
+        self.startup = [ "startup",
+            "product",
+            "habit",
+            "desire",
+            "beau" ]
+
+        self.word = [ "Social Media Narcissism",
+            "Guru Zentrum",
+            "Corporate Density",
+            "Spatial Complexity",
+            "Loving Spoonful",
+            "Braun Zucker",
+            "Culture Jam",
+            "Cube Farm",
+            "Beanbag Office",
+            "Stress Puppy",
+            "Food Stamps",
+            "Seagull Management",
+            "Billy Cosby Sweater Design" ]
+
+    def generate( self, name ):
+        startup = random.choice( self.startup )
+        word = random.choice( self.word )
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name, startup=startup, word=word)
+        return "/me %s" % message_out
+    
+
