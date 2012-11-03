@@ -40,6 +40,7 @@ class PoveyCommand( BaseCommand ):
                             Template("doesn't remember the film being this long"),
                             Template("is annoyed by the quality of sound"),                            
                             Template("makes a dry northern comment"),
+                            Template("instagrames his rhubardb creme brulee"),
                             Template("fucks off and buys some obscure 7 inches."),                                                        
                             Template("calls $name a divvy")
                             ]
