@@ -13,6 +13,7 @@ class DorisCommand( BaseCommand ):
                             Template("goes for a road trip."),
                             Template("drinks !satan under the table."),
                             Template("does the deckless !dovehand."),
+                            Template("is shocked that $name unironically called himself a Futurist."),
                             Template("reminds you of the Trojan Unicorn.") ]
 
     def generate( self, name ):
