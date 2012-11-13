@@ -15,7 +15,7 @@ class AngryCommand( BaseCommand ):
                             Template("hates the very idea of $name."), 
                             Template("kicks $name's cat down the stairs."), 
                             Template("spits on $name."), 
-                            Template("endoreses $name on Linked-in for being a cunt."), 
+                            Template("endorses $name on Linked-in for being a cunt."), 
                             Template("moshes."), 
                             Template("gives $name a dead arm."), 
                             Template("calls $name a tosser"), 
