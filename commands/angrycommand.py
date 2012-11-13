@@ -3,11 +3,11 @@ from string import Template
 import random
 from commandbase import BaseCommand
 
-class HateCommand( BaseCommand ):
+class AngryCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "hate" ]
+        self.command_mappings = [ "anger","bile","fuck" ]
         self.templates = [  Template("punches $name."),
                             Template("pukes on $name."), 
                             Template("starts a pointless fight with $name."), 
