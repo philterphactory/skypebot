@@ -21,6 +21,7 @@ class SatanCommand( BaseCommand ):
                             Template("cooks up a nice batch of wasabi dumplings."),
                             Template("shuffles to some botstep."),
                             Template("is buying coupons."),
+                            Template("loves $name\'s leather kilt."),
                             Template("delivers a sermon."),
                             Template("doesn't speak the language."),
                             Template("knows three facts about Berlin."),
@@ -39,6 +40,8 @@ class SatanCommand( BaseCommand ):
                             Template("massages the data."),
                             Template("wears a thong."),
                             Template("is shopping for kilts."),
+                            Template("shows off his junk in leather speedos."),
+                            Template("goes missing in Scotland."),
                             Template("spreads some !love."),
                             Template("embraces a stranger on a railway platform."),
                             Template("rolls up.") ]
@@ -52,6 +55,7 @@ class MulletCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
+        self.command_mappings = [ "mullet" ]
         self.templates = [  Template("shakes his head.") ]
                             
     def generate( self, name ):
