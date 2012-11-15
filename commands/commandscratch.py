@@ -287,13 +287,13 @@ class ChristmasCommand( BaseCommand ):
         self.templates = [  Template("kisses $name under the mistletoe."),
                             Template("has had too much eggnog."),
                             Template("asks if $name has kept the receipt."),
-                            Template("likes a bit of the dark meat.")
-                            Template("is soaked in brandy.")
-                            Template("sets fire to the decorative wreath.")
-                            Template("puts $name on top of the tree.")
-                            Template("gets $name a book token.")
-                            Template("eats all the Roses.")
-                            Template("has a lame party-popper.")
+                            Template("likes a bit of the dark meat."),
+                            Template("is soaked in brandy."),
+                            Template("sets fire to the decorative wreath."),
+                            Template("puts $name on top of the tree."),
+                            Template("gets $name a book token."),
+                            Template("eats all the Roses."),
+                            Template("has a lame party-popper."),
                             Template("asks $name to carve a big of leg and breast.")
                             ]
 
