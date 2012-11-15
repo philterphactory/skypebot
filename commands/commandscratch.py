@@ -279,4 +279,25 @@ class MynewCommand( BaseCommand ):
         message_out = template.substitute(word=word,name=name, startup=startup)
         return "/me %s" % message_out
     
+class ChristmasCommand( BaseCommand ):
 
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "christmas", "chrimble", "santa" ]
+        self.templates = [  Template("kisses $name under the mistletoe."),
+                            Template("has had too much eggnog."),
+                            Template("asks if $name has kept the receipt."),
+                            Template("likes a bit of the dark meat.")
+                            Template("is soaked in brandy.")
+                            Template("sets fire to the decorative wreath.")
+                            Template("puts $name on top of the tree.")
+                            Template("gets $name a book token.")
+                            Template("eats all the Roses.")
+                            Template("has a lame party-popper.")
+                            Template("asks $name to carve a big of leg and breast.")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
