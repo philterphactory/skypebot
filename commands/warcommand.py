@@ -20,7 +20,7 @@ class WarCommand( BaseCommand ):
                             Template("assassinates $name on YouTube."),
                             Template("Instagrams the POW."),
                             Template("has got his camos on."),
-                            Template("evactuates himself."),
+                            Template("evacuates himself."),
                             Template("invites $name to the facebook event 'Pillar of Defence'."),
                             Template("violates the TOS."),
                             Template("declares war on $name."),
