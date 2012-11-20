@@ -25,6 +25,10 @@ class WarCommand( BaseCommand ):
                             Template("violates the TOS."),
                             Template("declares war on $name."),
                             Template("storms out of the negotiations"),
+                            Template("arms the facebook guerillas"),
+                            Template("recommends $name for warmongering on LinkedIn"),
+                            Template("takes $name/'s country offline"),
+                            Template("mobilizes the social media attack squad"),
                             Template("breaks the ceasefire.")]
         
     def generate( self, name ):
