@@ -28,3 +28,16 @@ class SeriouslyCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
+
+class KameradCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "kamerad" ]
+        self.templates = [  Template("is all seriously, seriously, kamerad?")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
