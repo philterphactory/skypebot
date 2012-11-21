@@ -28,6 +28,11 @@ class ShardcoreCommand( BaseCommand ):
                             Template("gets censored by FOX."),
                             Template("draws a face on his cock-tip."),
                             Template("has declared world domination of techno sleaze has is ultimate goal."),
+                            Template("makes the bar recursive."),
+                            Template("recommends the algo-bar just behind the door."),
+                            Template("is in love with `select by rand()`"),
+                            Template("is really into algoart lately."),
+                            Template("is potentially a radio man."),
                             Template("has a serious chat with the cleaning lady.") ]
 
     def generate( self, name ):
