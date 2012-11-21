@@ -20,6 +20,12 @@ class DorisCommand( BaseCommand ):
                             Template("enjoys some quality time with mother."),
                             Template("demonstrates the Heinrich manouver."),
                             Template("is in two places at once."),
+                            Template("orders a killing."),
+                            Template("kickstarters a kneecapping."),
+                            Template("is all trended out."),
+                            Template("doesn\'t make it ten points if he doesn\t see ten points."),
+                            Template("needs another fucking !drink."),
+                            Template("invokes the no-dying clause."),
                             Template("writes some words."),
                             Template("reminds you of the Trojan Unicorn."),
                             Template("likes the antlers.")
