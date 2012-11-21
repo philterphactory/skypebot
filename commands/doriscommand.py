@@ -23,7 +23,7 @@ class DorisCommand( BaseCommand ):
                             Template("orders a killing."),
                             Template("kickstarters a kneecapping."),
                             Template("is all trended out."),
-                            Template("doesn\'t make it ten points if he doesn\t see ten points."),
+                            Template("doesn\'t make it ten points if he doesn\'t see ten points."),
                             Template("needs another fucking !drink."),
                             Template("invokes the no-dying clause."),
                             Template("writes some words."),
