@@ -112,7 +112,7 @@ class AnusCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "anus" ]
-        self.templates = [  Template("(moon)"),
+        self.templates = [  Template("(mooning)"),
                             Template("goes all yadda yadda yadda"),
                             Template("looks at a picture of !satan")
                             ]
