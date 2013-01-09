@@ -286,3 +286,16 @@ class ChristmasCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
+
+    class DeskBeerCommand( BaseCommand ):
+
+        def __init__(self):
+            BaseCommand.__init__( self )
+            self.command_mappings = [ "deskbeer"]
+            self.templates = [  Template("hurriedly brings a beer to $name's desk.")
+                                ]
+
+        def generate( self, name ):
+            template = random.choice( self.templates )
+            message_out = template.substitute(name=name)
+            return "/me %s" % message_out
