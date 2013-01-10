@@ -299,3 +299,22 @@ class ChristmasCommand( BaseCommand ):
             template = random.choice( self.templates )
             message_out = template.substitute(name=name)
             return "/me %s" % message_out
+            
+            
+class SxeCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "sxe", "edge" ]
+        self.templates = [  Template("is listening to Minor Threat."),
+                            Template("draws Xs on the back of his hands."),
+                            Template("slaps the cigarette out of $name's mouth."),
+                            Template("is drinking Pepsi."),
+                            Template("advocates a drug-free existence."),
+                            Template("is wearing some awesome Nike dunks."),
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out  
