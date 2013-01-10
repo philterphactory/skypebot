@@ -286,28 +286,6 @@ class ChristmasCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
-
-class DeskBeerCommand( BaseCommand ):
-
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.command_mappings = [ "deskbeer"]
-        self.templates = [  Template("hurriedly brings a beer to $name's desk."),
-                            Template("wonders why $name is still in the office."),
-                            Template("opens a beer on the edge of the table."),                            
-                            Template("spills $drink on his MacBook Air."),
-                            Template("uses a post-it note as a beer mat."),
-                            Template("settles for a warm Beck's."),
-                            Template("is a bit drunk off half a bottle of beer."),
-                            Template("is only really looking at tumblr now."),
-                            Template("has an Altoid to cover up beer breath."),
-                            Template("advises $name to look for the hip flask in the desk drawer.")
-                         ]
-
-    def generate( self, name ):
-        template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
-        return "/me %s" % message_out
             
             
 class SxeCommand( BaseCommand ):
