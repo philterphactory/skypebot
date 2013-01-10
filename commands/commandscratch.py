@@ -293,7 +293,7 @@ class ChristmasCommand( BaseCommand ):
             BaseCommand.__init__( self )
             self.command_mappings = [ "deskbeer"]
             self.templates = [  Template("hurriedly brings a beer to $name's desk.")
-                                ]
+                             ]
 
         def generate( self, name ):
             template = random.choice( self.templates )
