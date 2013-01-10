@@ -292,7 +292,9 @@ class DeskBeerCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "deskbeer"]
-        self.templates = [  Template("hurriedly brings a beer to $name's desk.")
+        self.templates = [  Template("hurriedly brings a beer to $name's desk."),
+                            Template("wonders why $name is still in the office."),
+                            Template("advises $name to look for the hip flask in the desk drawer.")
                          ]
 
     def generate( self, name ):
