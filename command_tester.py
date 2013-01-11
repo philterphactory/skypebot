@@ -5,11 +5,11 @@ from commands import commandscratch
 from commands import hankcommand
 from commands import regretscommand
 from commands import ballcommand
-from commands import warcommand
+from commands import ennuicommand
 
 
 # bullshit
-test_command = warcommand.WarCommand()
+test_command = ennuicommand.EnnuiCommand()
 print test_command.generate( "shardcore" )
 
 # ponder
