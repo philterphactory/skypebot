@@ -7,7 +7,7 @@ class EnnuiCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "boredom","ennui" ]
+        self.command_mappings = [ "bored","ennui" ]
         self.templates = [  Template("draws the curtains and returns to bed."),
                             Template("wonders why $name bothers."),
                             Template("starts to read a book, puts it away after the second page."),
