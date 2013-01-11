@@ -205,6 +205,7 @@ class DeskBeerCommand( BaseCommand ):
                             Template("opens a beer on the edge of the table."),                            
                             Template("spills $drink on his MacBook Air."),
                             Template("uses a post-it note as a beer mat."),
+                            Template("tries to find a place to hide the empty beer bottles"),
                             Template("settles for a warm Beck's."),
                             Template("is a bit drunk off half a bottle of beer."),
                             Template("is only really looking at tumblr now."),
