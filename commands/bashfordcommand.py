@@ -7,7 +7,7 @@ class BashfordCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "bashford" ]
+        self.command_mappings = [ "bash" ]
         self.templates = [  Template("is algoraving."),
                     Template("shares a genrememe track."),
                     Template("is commuting to Hamburg."),
@@ -25,6 +25,7 @@ class BashfordCommand( BaseCommand ):
                     Template("needs the splashy afro back."),
                     Template("puts a 303 in a !drink for $name."),
                     Template("is making a microsite for an !adman."),
+                    Template("is on a diet."),
                     Template("loves peeps.") ]
 
     def generate( self, name ):
