@@ -304,4 +304,17 @@ class SxeCommand( BaseCommand ):
     def generate( self, name ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
-        return "/me %s" % message_out  
+        return "/me %s" % message_out 
+
+class FFSCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "ffs" ]
+        self.templates = [  Template("for fucks sake, $name")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "%s" % message_out  
