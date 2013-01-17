@@ -84,9 +84,8 @@ class BatsignCommand( BaseCommand ):
                     print command_index
                     if command_index > -1:
                          name = body[ command_index + len(commandstring): ]
-                         name = remainder.lstrip()
-                         return self.generate( name )
-                              
+                         name = name.lstrip()
+                         return self.generate( name )                              
           name = message.FromDisplayName
           return self.generate( name )               
           
