@@ -57,7 +57,10 @@ twitter_mapping = {
      "!povey"  : "@topfife",
      "!satan":"@zeroinfluencer",
      "satan":"@zeroinfluencer",
-     "david":"@zeroinfluencer"
+     "david":"@zeroinfluencer",
+     "kaiser":"@marcusjhbrown",
+     "!kaiser":"@marcusjhbrown",
+     "marcus":"@marcusjhbrown"
 }
 
 
