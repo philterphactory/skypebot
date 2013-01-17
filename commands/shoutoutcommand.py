@@ -86,8 +86,8 @@ class BatsignCommand( BaseCommand ):
                          name = body[ command_index + len(commandstring): ]
                          name = name.lstrip()
                          twitter_mapping = {
-                              "povey"   : "@topfife"
-                              "greg"    : "@topfife"
+                              "povey"   : "@topfife",
+                              "greg"    : "@topfife",
                               "!povey"  : "@topfife"
                          }
                          try:
