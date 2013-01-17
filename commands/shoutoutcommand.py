@@ -92,7 +92,9 @@ class BatsignCommand( BaseCommand ):
                     command_index = bl.find( commandstring )
                     print command_index
                     if command_index > -1:
-                         name = body[ command_index + len(commandstring): ]
+                         remainder = body[ command_index + len(commandstring): ]
+                         tokens = re.split( '\W+', remainder )
+                         name = tokens[0]
                          name = name.lstrip()
                          if name in twitter_mapping:
                               name = twitter_mapping[name]
