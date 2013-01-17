@@ -85,6 +85,13 @@ class BatsignCommand( BaseCommand ):
                     if command_index > -1:
                          name = body[ command_index + len(commandstring): ]
                          name = name.lstrip()
+                         twitter_mapping = {
+                              "povey"   : "@topfife"
+                              "greg"    : "@topfife"
+                              "!povey"  : "@topfife"
+                         }
+                         try:
+                              name = twitter_mapping[name]
                          return self.generate( name )                              
           name = message.FromDisplayName
           return self.generate( name )               
