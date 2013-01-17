@@ -51,6 +51,16 @@ class ShoutoutCommand( BaseCommand ):
           return self.generate( name )               
           
 
+twitter_mapping = {
+     "povey"   : "@topfife",
+     "greg"    : "@topfife",
+     "!povey"  : "@topfife",
+     "!satan":"@zeroinfluencer",
+     "satan":"@zeroinfluencer",
+     "david":"@zeroinfluencer"
+}
+
+
 class BatsignCommand( BaseCommand ):
 
      def __init__(self):
@@ -81,6 +91,8 @@ class BatsignCommand( BaseCommand ):
                     if command_index > -1:
                          name = body[ command_index + len(commandstring): ]
                          name = name.lstrip()
+                         if name in twitter_mapping:
+                              name = twitter_mapping[name]
                          return self.generate( name )                              
           name = message.FromDisplayName
           return self.generate( name )               
