@@ -187,9 +187,9 @@ class BotThread( queuedthread.QueuedThread ):
                                                                                 print "-->  gift %s to %s " % (commandbang, name )
                                                                                 message_out = command.gift( name )
                                                                                 break
-                                                                            if token.lower() in nicknames:
+                                                                            if token.lower() in egonames:
                                                                                 print "-->  gift %s to %s " % (commandbang, name )
-                                                                                message_out = command.gift( nicknames[token.lower()] )
+                                                                                message_out = command.gift( egonames[token.lower()] )
                                                                                 break
                                                                         if message_out is not None:
                                                                             break

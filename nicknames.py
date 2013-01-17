@@ -1,4 +1,4 @@
-nicknames={"satan":"David Bausola", 
+egonames={"satan":"David Bausola", 
                "stan":"David Bausola",
                "lobsterGod":"David Bausola", 
                "marcusjhbrownv2":"David Bausola",
