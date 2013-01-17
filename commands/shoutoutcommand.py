@@ -61,6 +61,9 @@ class BatsignCommand( BaseCommand ):
           BaseCommand.__init__( self )
           self.command_mappings = [ "batsign" ]
           self.templates = [  Template("demands the attention of $name."),
+                              Template("formally requests the presence of $name in the bar."),                         
+                              Template("needs $name right fucking now."),
+                              Template("shines a lamp in the sky for $name."),
                             ]
           self.gifting_enabled = False
 
