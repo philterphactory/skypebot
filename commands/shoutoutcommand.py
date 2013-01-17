@@ -83,16 +83,10 @@ class BatsignCommand( BaseCommand ):
                     command_index = bl.find( commandstring )
                     print command_index
                     if command_index > -1:
-                         remainder = body[ command_index + len(commandstring): ]
-                         remainder = remainder.lstrip()
-                         print remainder
-                         to_string = "to"
-                         to_index = remainder.lower().find( to_string )
-                         name = None
-                         if to_index > -1:
-                              name = remainder[ to_index + len(to_string): ]
-                              name = name.lstrip()
-                              return self.generate( name )
+                         name = body[ command_index + len(commandstring): ]
+                         name = remainder.lstrip()
+                         return self.generate( name )
+                              
           name = message.FromDisplayName
           return self.generate( name )               
           
