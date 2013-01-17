@@ -1,4 +1,4 @@
-from commands import pondercommand
+from commands import drinkcommand
 from commands import shoutoutcommand
 from commands import lspcommand
 from commands import commandscratch
@@ -9,14 +9,14 @@ from commands import ennuicommand
 
 
 # bullshit
-test_command = ennuicommand.EnnuiCommand()
-print test_command.generate( "shardcore" )
+test_command = drinkcommand.DrinkCommand()
+print test_command.generate( "drink for testing" )
 
 # ponder
-test_command = pondercommand.PonderCommand()
-print test_command.generate( "prehensile" )
+#test_command = pondercommand.PonderCommand()
+#print test_command.generate( "prehensile" )
 
 # shoutout
-test_command = shoutoutcommand.ShoutoutCommand()
-test_message = { "Body": "#shoutout to the berlin massive" }
-print test_command.execute( test_message )
+#test_command = shoutoutcommand.ShoutoutCommand()
+#test_message = { "Body": "#shoutout to the berlin massive" }
+#print test_command.execute( test_message )
