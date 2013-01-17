@@ -10,7 +10,7 @@ class TeaCommand( BaseCommand ):
 
 		BaseCommand.__init__( self )
 		
-		self.command_mappings = [ "tea" ]
+		self.command_mappings = [ "tea", "cuppa", "brew" ]
 
 		self.templates = [ 	Template("pours $name $tea."),
 							Template("stares glassy eyed at $name, then slides $tea across the bar."),
@@ -22,7 +22,10 @@ class TeaCommand( BaseCommand ):
 		self.pre_modifiers = [ "a massive mug of",
 				   "some stewed",
 				   "a fine blend of",
-				   "a freshly brewed" ]				
+				   "a freshly brewed",
+				   "a tiny overpriced sample of SFTGFOP",
+				   "a perfectly prepared cup of",
+				   "a teapot full of"]				
 
 		self.teas = [ "Assam",
 			"Darjeeling First Flush",
