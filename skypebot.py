@@ -15,6 +15,7 @@ import os
 import commands
 import urllib2
 import urllib
+import nicknames
 
 class ChatHandler(object):
     
@@ -185,6 +186,10 @@ class BotThread( queuedthread.QueuedThread ):
                                                                             if token.lower() in name.lower():
                                                                                 print "-->  gift %s to %s " % (commandbang, name )
                                                                                 message_out = command.gift( name )
+                                                                                break
+                                                                            if token.lower() in nicknames:
+                                                                                print "-->  gift %s to %s " % (commandbang, name )
+                                                                                message_out = command.gift( nicknames[token.lower] )
                                                                                 break
                                                                         if message_out is not None:
                                                                             break
