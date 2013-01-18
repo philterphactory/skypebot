@@ -9,7 +9,7 @@ class BullshitCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
 
-        self.command_mappings = [ "bullshit" ]
+        self.command_mappings = [ "bullshit", "semiotics" ]
 
         self.array1 = ["aggregates", 
                        "beta-tests", 
