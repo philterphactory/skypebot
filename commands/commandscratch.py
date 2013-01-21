@@ -318,3 +318,23 @@ class FFSCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "%s" % message_out  
+
+
+class KickCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "kick", "ban", "evict", "bar" ]
+        self.templates = [  Template("warns $name about their behaviour."),
+                            Template("points at the rules on the board. Tuts at $name."),
+                            Template("reminds $name of the Bar Rules."),
+                            Template("tells $name that they're on their final warning."),
+                            Template("puts $name in the bins"),
+                            Template("frogmarches $name off the premises."),
+                            Template("shakes his head at $name.")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out   
