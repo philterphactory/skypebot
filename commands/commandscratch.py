@@ -338,3 +338,23 @@ class KickCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out   
+
+
+class CatCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "cat" ]
+        self.templates = [  Template("directs $name to http://procatinator.com/?cat=\"$no\".".") ]
+        self.no = [ "1",
+            "2",
+            "3",
+            "4",
+            "5" ]
+
+    def generate( self, name ):
+        word = random.choice( self.word )
+        template = random.choice( self.templates )
+        message_out = template.substitute(no=no,name=name, cat=cat)
+        return "/me %s" % message_out
+    
