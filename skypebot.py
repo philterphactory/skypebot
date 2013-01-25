@@ -16,7 +16,7 @@ import commands
 import urllib2
 import urllib
 
-all_commands = []
+command_list=[]
 egonames={"satan":"David Bausola", 
           "stan":"David Bausola",
           "lobsterGod":"David Bausola", 
@@ -134,7 +134,7 @@ class BotThread( queuedthread.QueuedThread ):
             self.twitter_connector.start()
 
         # import commands
-
+        all_commands = []
         logging.info( "Loading commands..." )
         ## load all commands
         reload( commands )
@@ -155,7 +155,8 @@ class BotThread( queuedthread.QueuedThread ):
                             logging.info( e )    
             except Exception, e:
                 logging.info( e )
-
+        global command_list
+        command_list=all_commands
         if RUN_SKYPE:
             logging.info( "Attaching to Skype..." )
             skype = Skype4Py.Skype(Transport='x11')
