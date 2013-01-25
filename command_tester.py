@@ -5,12 +5,12 @@ from commands import commandscratch
 from commands import hankcommand
 from commands import regretscommand
 from commands import ballcommand
-from commands import ennuicommand
+from commands import statscommand
 
 
-# bullshit
-test_command = drinkcommand.DrinkCommand()
-print test_command.generate( "drink for testing" )
+# stats
+test_command = statscommand.StatsCommand()
+print test_command.generate( "stats for povery" )
 
 # ponder
 #test_command = pondercommand.PonderCommand()
