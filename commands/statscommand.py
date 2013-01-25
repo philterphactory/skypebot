@@ -1,6 +1,7 @@
 # coding=UTF-8
 from string import Template
 import random
+import urllib
 import urllib2
 from commandbase import BaseCommand
 
@@ -19,8 +20,13 @@ class StatsCommand( BaseCommand ):
           if name.endswith( (".","!","?") ) and message_out.endswith("."):
                message_out = message_out[:-1] # lose the fullstop if name is already punctuated
 
-          url='http://ephemera.shardcore.no-ip.org/cgi-bin/getBarStats.pl?k='+urllib2.encode(name)
-          response = urllib2.urlopen(url)
+          url='http://ephemera.shardcore.no-ip.org/cgi-bin/getBarStats.pl'
+
+          values = {'k' : name }
+
+          data = urllib.urlencode(values)
+          req = urllib2.Request(url, data)
+          response = urllib2.urlopen(req)
           report = response.read()
 
 

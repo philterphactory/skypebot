@@ -10,7 +10,7 @@ from commands import statscommand
 
 # stats
 test_command = statscommand.StatsCommand()
-print test_command.generate( "stats for povery" )
+print test_command.generate( "stats povery" )
 
 # ponder
 #test_command = pondercommand.PonderCommand()
