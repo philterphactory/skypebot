@@ -16,6 +16,7 @@ import commands
 import urllib2
 import urllib
 
+all_commands = []
 egonames={"satan":"David Bausola", 
           "stan":"David Bausola",
           "lobsterGod":"David Bausola", 
@@ -133,7 +134,7 @@ class BotThread( queuedthread.QueuedThread ):
             self.twitter_connector.start()
 
         # import commands
-        global all_commands = []
+
         logging.info( "Loading commands..." )
         ## load all commands
         reload( commands )
