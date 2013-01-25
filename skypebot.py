@@ -133,7 +133,7 @@ class BotThread( queuedthread.QueuedThread ):
             self.twitter_connector.start()
 
         # import commands
-        all_commands = []
+        global all_commands = []
         logging.info( "Loading commands..." )
         ## load all commands
         reload( commands )

@@ -5,12 +5,12 @@ from commands import commandscratch
 from commands import hankcommand
 from commands import regretscommand
 from commands import ballcommand
-from commands import statscommand
+from commands import helpcommand
 
 
 # stats
-test_command = statscommand.StatsCommand()
-print test_command.generate( "stats povery" )
+test_command = helpcommand.HelpCommand()
+print test_command.generate( "help" )
 
 # ponder
 #test_command = pondercommand.PonderCommand()
