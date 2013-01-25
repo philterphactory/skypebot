@@ -30,10 +30,10 @@ class StatsCommand( BaseCommand ):
           report = response.read()
 
 
-          message_out+=report
+          message_out=report
            
 
-          return "/me %s" % message_out
+          return "/me reports\n %s" % message_out
 
      def execute( self, message ):
           body = message.Body
