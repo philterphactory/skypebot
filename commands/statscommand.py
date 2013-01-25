@@ -11,7 +11,7 @@ class StatsCommand( BaseCommand ):
           self.command_mappings = [ "stats" ]
           self.templates = [  Template("Generating $name."),
                             ]
-          self.gifting_enabled = True
+          self.gifting_enabled = False
 
      def generate( self, name ):
           template = random.choice( self.templates )
@@ -19,8 +19,7 @@ class StatsCommand( BaseCommand ):
           if name.endswith( (".","!","?") ) and message_out.endswith("."):
                message_out = message_out[:-1] # lose the fullstop if name is already punctuated
 
-          words=name.split()
-          url='http://ephemera.shardcore.no-ip.org/cgi-bin/getBarStats.pl?k='+words[2]
+          url='http://ephemera.shardcore.no-ip.org/cgi-bin/getBarStats.pl?k='+urllib2.encode(name)
           response = urllib2.urlopen(url)
           report = response.read()
 
