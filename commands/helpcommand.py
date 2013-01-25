@@ -19,7 +19,7 @@ class HelpCommand( BaseCommand ):
                             
     def generate( self, name ):
 
-        s=' '.join(all_commands)
+        s=' '.join(command_list)
         message_out = "tells you how it is.\n"+s
         
         return "/me %s" % message_out
