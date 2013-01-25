@@ -56,7 +56,7 @@ class StatsCommand( BaseCommand ):
                          if to_index > -1:
                               name = remainder[ to_index + len(to_string): ]
                               name = name.lstrip()
-                              return self.generate( name )
+                              return self.generate( bl )
           name = message.FromDisplayName
-          return self.generate( name )               
+          return self.generate( bl )               
           
