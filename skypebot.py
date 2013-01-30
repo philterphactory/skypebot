@@ -55,7 +55,9 @@ egonames={"satan":"David Bausola",
           "doris":"Louisa Heinrich",
           "dozza":"Louisa Heinrich",
           "landy":"himself",
-          "landlord":"himself"}
+          "landlord":"himself",
+          "purps":"Simon White",
+          "nurps":"Simon White"}
 
 class ChatHandler(object):
     
