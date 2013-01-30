@@ -45,6 +45,23 @@ class TrialCommand( BaseCommand ):
     def generate( self, name ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
+
+                
+class MakeItSoCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "doit" ]
+        self.templates = [  Template("shouts at $name: \"Make it so!\""),
+                            Template("wonders why $name hasn't made that thing he's babbling on about yet.")
+                            
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
         return "/me %s" % message_out     
         
         
