@@ -10,7 +10,7 @@ class LightweightCommand( BaseCommand ):
         self.command_mappings = [ "lightweight" ]
         self.templates = [  Template("grabs the mop and tuts at the mess $name has made"),
                             Template("calls an ambulance for $name"),
-                            Template("talks conspiratorially behind $name\s back after they leave."),
+                            Template("talks conspiratorially behind $name\'s back after they leave."),
                             Template("expected so much more from $name"),
                             Template("de-invites $name from the forthcoming phactory bar coke and hookers party"),
                             Template("thinks $name should learn to hold their !drink"),
