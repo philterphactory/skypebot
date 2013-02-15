@@ -363,6 +363,16 @@ class SacrumCommand( BaseCommand ):
         BaseCommand.__init__( self )
         self.command_mappings = [ "Sacrum" ]
         self.templates = [  Template("sends $name much warmth.")
+                            Template("is European man with skills in advertising."),
+                            Template("has his own pencils."),
+                            Template("got in to funky advertising agency."),
+                            Template("sharpen pencil and top-up mobile phone."),
+                            Template("is availability on Wednesdays and CV’s on request."),
+                            Template("applies for a job at W+K."),
+                            Template("is sending out the right charges for right customer."),
+                            Template("is thanking you from his bottom."),
+                            Template("has brand warmness."),
+                            Template("seek advices from key figures in marketing arena."),
                             ]
 
     def generate( self, name ):
