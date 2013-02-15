@@ -362,7 +362,7 @@ class SacrumCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "Sacrum" ]
-        self.templates = [  Template("sends $name much warmth.")
+        self.templates = [  Template("sends $name much warmth."),
                             Template("is European man with skills in advertising."),
                             Template("has his own pencils."),
                             Template("got in to funky advertising agency."),
