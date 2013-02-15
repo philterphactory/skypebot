@@ -356,4 +356,17 @@ class KickCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
         
-        
+
+class SacrumCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "Sacrum" ]
+        self.templates = [  Template("sends $name much warmth"),
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
