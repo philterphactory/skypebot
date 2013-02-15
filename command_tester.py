@@ -9,11 +9,11 @@ from commands import helpcommand
 
 
 # stats
-test_command = helpcommand.HelpCommand()
+test_command = commandscratch.SacrumCommand()
 print test_command.generate( "help" )
 
 # ponder
-#test_command = pondercommand.PonderCommand()
+test_command = pondercommand.PonderCommand()
 #print test_command.generate( "prehensile" )
 
 # shoutout
