@@ -372,7 +372,7 @@ class SacrumCommand( BaseCommand ):
                             Template("is sending out the right charges for right customer."),
                             Template("is thanking you from his bottom."),
                             Template("has brand warmness."),
-                            Template("seek advices from key figures in marketing arena."),
+                            Template("seek advices from key figures in marketing arena.")
                             ]
 
     def generate( self, name ):
