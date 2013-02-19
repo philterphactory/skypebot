@@ -28,6 +28,8 @@ class CatCommand( BaseCommand ):
                             Template("can't be bothered to wake up."),
                             Template("has horrible breath."),
                             Template("wants some tuna."),
+                            Template("gorges on catnip then freaks out over what !lsp said"),
+                            Template("plays with the !ball"),
                             Template("implacably receives the strokes of $name"),
                             Template("chases a lazer pointer")]
         
