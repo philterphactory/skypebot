@@ -5,15 +5,15 @@ from commands import commandscratch
 from commands import hankcommand
 from commands import regretscommand
 from commands import ballcommand
-from commands import helpcommand
+from commands import catcommand
 
 
 # stats
-test_command = commandscratch.SacrumCommand()
-print test_command.generate( "help" )
+test_command = catcommand.CatCommand()
+print test_command.generate( "shardcore" )
 
 # ponder
-test_command = pondercommand.PonderCommand()
+#test_command = pondercommand.PonderCommand()
 #print test_command.generate( "prehensile" )
 
 # shoutout
