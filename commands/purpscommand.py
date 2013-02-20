@@ -10,15 +10,26 @@ class PurpsCommand( BaseCommand ):
 
         BaseCommand.__init__( self )
 
-        self.command_mappings = [ "purps","nuprs","purple","sime" ]
+        self.command_mappings = [ "purps","nurps","purple","sime" ]
 
-        self.templates = [  Template("likes his whiskey"),
-                            Template("takes a day trip to brighton"),
-                            Template("buys a little printer"),
-                            Template("buys some butter for !povey"),
-                            Template("buys a ticket for the !kaiser"),
-                            Template("falls off the wagon"),
-                            Template("writes words for money, not !love") ]
+        self.templates = [  Template("likes his whiskey."),
+                            Template("takes a day trip to brighton."),
+                            Template("buys a little printer."),
+                            Template("blows up a red balloon."),
+                            Template("buys some butter for !povey."),
+                            Template("buys a ticket for the !kaiser."),
+                            Template("falls off the wagon."),
+                            Template("is vending."),
+                            Template("can't speak to the guy next to him."),
+                            Template("buys the domain name."),
+                            Template("buys some headphones."),
+                            Template("left the finance industry."),
+                            Template("moistens a URL."),
+                            Template("is still pissed off that the !client went with the shit idea."),
+                            Template("is harrassing about his invoices."),
+                            Template("is photographing strangers asleep."),
+                            Template("dolor sit amet, consectetur adipiscing elit."),
+                            Template("writes words for money, not !love.") ]
                             
     def generate( self, name ):
         template = random.choice( self.templates )
