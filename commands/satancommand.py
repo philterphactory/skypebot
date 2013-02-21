@@ -14,8 +14,10 @@ class SatanCommand( BaseCommand ):
 
         self.templates = [  Template("considers the infomorph aesthetic."),
                             Template("draws a martini."),
-                            Template("thinks the bald mullet is an excellent look."),
+                            Template("weeps for his lost mullet."),
                             Template("wears a nice !hat."),
+                            Template("gets lost in Dalston"),
+                            Template("makes a 54mb !prezi"),
                             Template("rolls the 20-sided die for the RPG Wankmaster."),
                             Template("exhales a thick fug."),
                             Template("cooks up a nice batch of wasabi dumplings."),
@@ -44,7 +46,9 @@ class SatanCommand( BaseCommand ):
                             Template("goes missing in Scotland."),
                             Template("spreads some !love."),
                             Template("embraces a stranger on a railway platform."),
-                            Template("rolls up.") ]
+                            Template("gets called \'some fucker\' by Charlie Brooker."),
+                            Template("rolls up.")
+                            ]
                             
     def generate( self, name ):
         template = random.choice( self.templates )
