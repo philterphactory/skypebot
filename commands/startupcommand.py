@@ -7,7 +7,7 @@ class StartupCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "startup" ]
+        self.command_mappings = [ "startup","hoxton","shoreditch" ]
         self.templates = [  Template("pivots."),
                             Template("is Angel-funded by Ashton fucking Kutcher."),
                             Template("has run out of budget."),
@@ -16,7 +16,7 @@ class StartupCommand( BaseCommand ):
                             Template("asks $name for some more ramen."),
                             Template("is all hot on SoLoMo."),
                             Template("fantasizes about being featured on TechCrunch."),
-                            Template("can’t seem to find any talent."),
+                            Template("can'seem to find any talent."),
                             Template("pitches $name while they pee."),
                             Template("is super excited about that new js framework (or was that ruby?)"),
                             Template("is going to change the world with his Daily Deals site."),

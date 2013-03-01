@@ -47,6 +47,14 @@ class SatanCommand( BaseCommand ):
                             Template("spreads some !love."),
                             Template("embraces a stranger on a railway platform."),
                             Template("gets called \'some fucker\' by Charlie Brooker."),
+                            Template("attends a public lecture"),
+                            Template("knows all about Dunbar's number"),
+                            Template("is not sure about the West Country"),
+                            Template("won't go south of the river"),
+                            Template("entertains Aunt Sally with a !magic trick"),
+                            Template("will accept your offer of an expensive lunch, thank you."),
+                            Template("collects a soul"),
+                            Template("knows the agency gossip"),
                             Template("rolls up.")
                             ]
                             
