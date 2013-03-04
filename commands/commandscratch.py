@@ -380,3 +380,23 @@ class SacrumCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+        
+class WaaaassssaaaapCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "Waaaassssaaaap" ]
+        self.templates = [  Template("nods at $name."),
+                            Template("replies to $name, waaaaaaaaaassssaaaaaaaaaaapp!"),
+                            Template("asks $name what they're upto."),
+                            Template("is just having a Bud."),
+                            Template("nods. True, true.")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
+
+
