@@ -3,7 +3,7 @@ from string import Template
 import random
 from commandbase import BaseCommand
 
-class Albeit( BaseCommand ):
+class AlbeitCommand( BaseCommand ):
 
     def __init__(self):
           
