@@ -35,7 +35,7 @@ class AlbeitCommand( BaseCommand ):
                     Template("doesn't trust the algorithms."),
                     Template("bigs up the Warwick massive."),
                     Template("publicly loses !sxsw on the Twitters."),
-                    Template("believes the Unified Knowledge System relies heavily on the informaiton metaphor."),
+                    Template("believes the Unified Knowledge System relies heavily on the information metaphor."),
                     Template("tells $name that the Twitter bullshit filter is working."),
                     Template("visualises the intangible."),
                     Template("loses his data."),
