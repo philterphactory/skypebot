@@ -5,11 +5,11 @@ from commands import commandscratch
 from commands import hankcommand
 from commands import regretscommand
 from commands import ballcommand
-from commands import albeitcommand
+from commands import recapcommand
 
 
 # stats
-test_command = albeitcommand.AlbeitCommand()
+test_command = recapcommand.RecapCommand()
 print test_command.generate( "shardcore" )
 
 # ponder
