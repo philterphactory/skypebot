@@ -45,3 +45,22 @@ class SnackCommand( BaseCommand ):
 		message_out = template.substitute(name=name, snack=snack)
 		return "/me %s" % message_out
 
+class DeskPizzaCommand( BaseCommand ):
+
+	def __init__(self):
+
+		BaseCommand.__init__( self )
+		
+		self.command_mappings = [ "deskpizza" ]
+
+		self.templates = [ 	Template("watches $name hunker down at his desk and devour a pizza."),
+							Template("finds $name foraging in the communal kitchen."),
+							Template("wonders whether $name has eaten at all, given his mood right now."),
+							Template("overhears $name order another pizza for delivery.") ]
+
+
+	def generate( self, name ):
+		template = random.choice( self.templates )
+		message_out = template.substitute(name=name)
+		return "/me %s" % message_out
+
