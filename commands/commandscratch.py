@@ -399,4 +399,18 @@ class WaaaassssaaaapCommand( BaseCommand ):
         return "/me %s" % message_out
 
 
+class BirthdayCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "birthday" ]
+        self.templates = [  Template("pops the champagne for $name."),
+                            Template("brings out the cake for $name.")
+                            
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out     
 
