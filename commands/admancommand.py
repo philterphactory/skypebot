@@ -60,7 +60,8 @@ class AdmanCommand( BaseCommand ):
                     Template("thinks he's Donald Fucking Draper."),
                     Template("bitches about spec work."),
                     Template("adds QR codes."),
-                    Template("fucks about with a pencil.")]
+                    Template("fucks about with a pencil."),
+                    Template("wonders whether he is an #artist")]
 
     def generate( self, name ):
         template = random.choice( self.templates )
