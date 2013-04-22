@@ -27,17 +27,7 @@ class TeaCommand( BaseCommand ):
 				   "a tiny overpriced sample of SFTGFOP",
 				   "a perfectly prepared cup of",
 				   "a teapot full of"]				
-
-		self.teas = [ "Assam",
-			"Darjeeling First Flush",
-			"Builders",
-			"Earl Grey",
-			"single estate Ceylon",
-			"100 year old handrolled Oolong",
-			"Lapsang Souchong",
-			"Matcha"]
 			
-		
 		self.morning_teas = [ "Assam",
 						"Pu-erh",
 						"Builders" ]
@@ -48,8 +38,11 @@ class TeaCommand( BaseCommand ):
 								"Nilgiri",
 								"Matcha" ]
 		
-		self.evening_teas = [ "Camomile",
-							  "Peppermint" ]
+		self.evening_teas = [ "Camomile tea",
+							  "Peppermint infusion",
+							  "Silver Needle",
+							  "White Peony",
+							  "Rooibos" ]
 		
 		self.night_teas = [ "Talisker",
 							"Laphroaig" ]
