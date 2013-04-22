@@ -3,7 +3,7 @@ from string import Template
 import random
 from commandbase import BaseCommand
 
-class AdmanCommand( BaseCommand ):
+class ArtistCommand( BaseCommand ):
 
     def __init__(self):
           
