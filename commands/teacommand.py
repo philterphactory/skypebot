@@ -35,11 +35,14 @@ class TeaCommand( BaseCommand ):
 			"100 year old handrolled Oolong",
 			"Lapsang Souchong",
 			"Matcha"]
+		self.times = ["",
+					"" ]
 
 	def generate( self, name ):
 		tea = random.choice( self.teas )
 		pre_modifier = random.choice( self.pre_modifiers )
-		tea = "%s %s" % (pre_modifier, tea)
+		hour_now = time.strftime("%H")
+		tea = "%s %s %s" % (pre_modifier, tea, hour_now)
 		template = random.choice( self.templates )
 		message_out = template.substitute(name=name, tea=tea)
 		return "/me %s" % message_out
