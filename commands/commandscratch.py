@@ -405,6 +405,7 @@ class TimeSensitiveCommand( BaseCommand ):
         BaseCommand.__init__( self )
         self.command_mappings = [ "tiime" ]
         self.templates = [  Template("looks at his watch, it's $hour."),
+        					Template("oh look, it's $hour.")
                             ]
 
     def generate( self, name ):
