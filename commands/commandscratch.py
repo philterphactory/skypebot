@@ -403,7 +403,7 @@ class TimeSensitiveCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "timetest" ]
+        self.command_mappings = [ "tiime" ]
         self.templates = [  Template("looks at his watch, it's $hour."),
                             ]
 
