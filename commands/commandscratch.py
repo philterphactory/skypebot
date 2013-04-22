@@ -399,4 +399,18 @@ class WaaaassssaaaapCommand( BaseCommand ):
         return "/me %s" % message_out
 
 
+class TimeSensitiveCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "time" ]
+        self.templates = [  Template("looks at his watch, it's $hour."),
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        hour_now = time.strftime("%H")
+        message_out = template.substitute(name=name,hour=hour_now)
+        return "/me %s" % message_out
+
 
