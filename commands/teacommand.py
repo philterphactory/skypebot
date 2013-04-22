@@ -36,14 +36,37 @@ class TeaCommand( BaseCommand ):
 			"100 year old handrolled Oolong",
 			"Lapsang Souchong",
 			"Matcha"]
-		self.times = ["",
-					"" ]
+			
+		
+		self.morning_teas = [ "Assam",
+						"Pu-erh",
+						"Builders" ]
+		
+		self.afternoon_teas = [ "Darjeeling First Flush",
+								"Lapsang Souchong",
+								"Dark Roasted Oolong",
+								"Nilgiri",
+								"Matcha" ]
+		
+		self.evening_teas = [ "Camomile",
+							  "Peppermint" ]
+		
+		self.night_teas = [ "Talisker",
+							"Laphroaig" ]
+			
 
 	def generate( self, name ):
-		tea = random.choice( self.teas )
+		hour_now = int(time.strftime("%H"))
+		if hour_now > 19:
+			tea = random.choice( self.evening_teas )
+		elif hour_now > 14:
+			tea = random.choice( self.afternoon_teas )
+		elif hour_now > 5:
+			tea = random.choice( self.morning_teas )
+		else:
+			tea = random.choice( self.night_teas )
 		pre_modifier = random.choice( self.pre_modifiers )
-		hour_now = time.strftime("%H")
-		tea = "%s %s %s" % (pre_modifier, tea, hour_now)
+		tea = "%s %s" % (pre_modifier, tea)
 		template = random.choice( self.templates )
 		message_out = template.substitute(name=name, tea=tea)
 		return "/me %s" % message_out
