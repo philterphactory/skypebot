@@ -58,6 +58,10 @@ class MarcusCommand( BaseCommand ):
 					Template("sells $name some used web."),
 					Template("charts a story."),
 					Template("makes it !social"),
+					Template("disappears from the bar for ages"),
+					Template("falls in !love"),
+					Template("forgets about the bar"),
+					Template("suggests we make something"),
 					Template("goes to work on his !tiny farmyard."),
 					Template("ponders the notion he could be an !adman.")
 					]

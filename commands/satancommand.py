@@ -55,7 +55,10 @@ class SatanCommand( BaseCommand ):
                             Template("will accept your offer of an expensive lunch, thank you."),
                             Template("collects a soul"),
                             Template("knows the agency gossip"),
-                            Template("rolls up.")
+                            Template("rolls up."),
+                            Template("makes peace"),
+                            Template("wears the diva mic"),
+                            Template("revises history")
                             ]
                             
     def generate( self, name ):
