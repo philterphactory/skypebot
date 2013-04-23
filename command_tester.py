@@ -6,10 +6,11 @@ from commands import hankcommand
 from commands import regretscommand
 from commands import ballcommand
 from commands import recapcommand
+from commands import commandcommand
 
 
 # stats
-test_command = recapcommand.RecapCommand()
+test_command = commandcommand.CommandCommand()
 print test_command.generate( "shardcore" )
 
 # ponder
