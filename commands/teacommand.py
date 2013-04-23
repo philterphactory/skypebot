@@ -52,7 +52,7 @@ class TeaCommand( BaseCommand ):
 		hour_now = int(time.strftime("%H"))
 		if hour_now > 19:
 			tea = random.choice( self.evening_teas )
-		elif hour_now > 14:
+		elif hour_now > 12:
 			tea = random.choice( self.afternoon_teas )
 		elif hour_now > 5:
 			tea = random.choice( self.morning_teas )
