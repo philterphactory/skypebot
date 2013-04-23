@@ -1,11 +1,12 @@
 # coding=UTF-8
 
 from string import Template
-import random
-from commandbase import BaseCommand
+import rando
 
 import pkgutil
 import commands
+
+from commandbase import BaseCommand
 
 class WhutCommand( BaseCommand ):
 
