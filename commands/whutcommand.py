@@ -1,7 +1,7 @@
 # coding=UTF-8
 
 from string import Template
-import rando
+import random
 
 import pkgutil
 import commands
