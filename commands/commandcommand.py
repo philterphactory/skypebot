@@ -11,13 +11,12 @@ class CommandCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "command", "cmd", "whut" ]
+        self.command_mappings = [ "cmd", "whut" ]
         
     def generate( self, name ):
 
-        command_list=[]
         # import commands
-        all_commands = []
+        a_commands = []
 
         ## load all commands
         reload( commands )
@@ -32,9 +31,9 @@ class CommandCommand( BaseCommand ):
                     
                     kommandklass = getattr( module, klassname )
                     kommand = kommandklass()
-                    all_commands.append( kommand )
+                    a_commands.append( kommand )
         out='commands: '
-        for cmd in all_commands:
+        for cmd in a_commands:
             l=cmd.command_mappings
             for c in l:
                 out=out+c+' '
