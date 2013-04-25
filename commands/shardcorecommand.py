@@ -33,8 +33,8 @@ class ShardcoreCommand( BaseCommand ):
                             Template("is in love with `select by rand()`"),
                             Template("is really into algoart lately."),
                             Template("is potentially a radio man."),
-                            Template("has a serious chat with the cleaning lady.")
-                            Template("deamnds to know about the parrot.") ]
+                            Template("has a serious chat with the cleaning lady."),
+                            Template("demands to know about the parrot.") ]
 
     def generate( self, name ):
         template = random.choice( self.templates )
