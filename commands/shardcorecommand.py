@@ -7,7 +7,7 @@ class ShardcoreCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "shardcore", "shardy", "eric", "silvertips" ]
+        self.command_mappings = [ "shardcore", "shardy", "eric", "silvertips", "guyfromrealworld" ]
         self.templates = [  Template("paints a lovely painting of Morrissey."),
                             Template("is told to bite his tongue by $name."),
                             Template("is denied access to the United States of Botstep."),
