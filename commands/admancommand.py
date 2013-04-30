@@ -61,7 +61,8 @@ class AdmanCommand( BaseCommand ):
                     Template("bitches about spec work."),
                     Template("adds QR codes."),
                     Template("fucks about with a pencil."),
-                    Template("wonders whether he is an #artist")]
+                    Template("wonders whether he is an #artist"),
+                    Template("must know a user's 'level'")]
 
     def generate( self, name ):
         template = random.choice( self.templates )
