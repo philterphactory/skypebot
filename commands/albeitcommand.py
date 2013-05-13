@@ -12,11 +12,8 @@ class AlbeitCommand( BaseCommand ):
           self.command_mappings = [ "albeit" ]
 
           self.templates = [  Template("interrogates the human infomorph aesthetic."),
-                    Template("RTs Dan O'Hararararah."),
-                    Template("moans about unpaid invoices"),
                     Template("!ponders if Blade Runnered is a term"),
                     Template("hasn't thought it through"),
-                    Template("changes his name to Puke Robert Mason"),
                     Template("starts an albeit meme."),
                     Template("goes off on one about #civicbots."),
                     Template("tweets the response."),
@@ -42,7 +39,6 @@ class AlbeitCommand( BaseCommand ):
                     Template("doesn't attend the conference."),
                     Template("is 12 years old."),
                     Template("trolls the conference panel."),
-                    Template("forgives Jon Ronson, suggests it was all a misunderstanding."),
                     Template("has soulless eyes."),
                     Template("needs more long words to hammer home his point."),
                     Template("thinks bots are an example of a reductionist technocracy."),
