@@ -398,3 +398,20 @@ class WaaaassssaaaapCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+class HeadDeskCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "headdesk" ]
+        self.templates = [  Template("watches $name smash his head into the bar counter"),
+                            Template("tries to stop $name from smashing through the cardboard wall with their head."),
+                            Template("smashes $name's head into the bar counter"),
+                            Template("watches $name walk by with a blood-gushing face"),
+                            Template("thinks $name must have a wooden head")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
+
