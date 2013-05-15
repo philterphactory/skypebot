@@ -407,7 +407,10 @@ class HeadDeskCommand( BaseCommand ):
                             Template("tries to stop $name from smashing through the cardboard wall with their head."),
                             Template("smashes $name's head into the bar counter"),
                             Template("watches $name walk by with a blood-gushing face"),
-                            Template("thinks $name must have a wooden head")
+                            Template("thinks $name must have a wooden head"),
+                            Template("facepalms. But it doesn't do $name's stupidity justice."),
+                            Template("wonder's how $name made it this far."),
+                            Template("hopes $name's table is strong enough.")
                             ]
 
     def generate( self, name ):
