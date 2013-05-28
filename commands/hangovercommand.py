@@ -7,7 +7,7 @@ class HangoverCommand( BaseCommand ):
 
     def __init__(self):
       BaseCommand.__init__( self )
-      self.command_mappings = [ "hangover", "hungover" ]
+      self.command_mappings = [ "hangover", "hungover", "benefit" ]
       self.templates = [ Template("is still wearing yesterday's clothes."),
                            Template("doesn't smell so good."),
                            Template("has bags on the bags under his eyes."),
