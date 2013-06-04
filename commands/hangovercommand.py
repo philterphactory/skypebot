@@ -29,6 +29,7 @@ class HangoverCommand( BaseCommand ):
                            Template("is sweating booze."),
                            Template("can barely speak."),
                            Template("is still drunk."),
+                           Template("takes a ride on the good ship Hangover: http://www.lememe.com/wp-content/uploads/2013/06/ss-hangover.jpg"),
                            Template("has his head in his hands.")]
 
     def generate( self, name ):
