@@ -23,7 +23,7 @@ class SpookCommand( BaseCommand ):
 				   "dodgy",
 				   "suspect",
 				   "incriminating",
-				   "unusual activity in their"
+				   "unusual activity in"
 				   ]				
 
 		self.things = [ "emails",
@@ -31,7 +31,7 @@ class SpookCommand( BaseCommand ):
 			"SMS messages",
 			"YouTube history",
 			"Porn preferences",
-			"!socialnetwork",
+			"!social activity",
 			"browsing habits",
 			"bank transactions",
 			"encrypted packets",
