@@ -337,10 +337,10 @@ class DeskBeerCommand( BaseCommand ):
 
     def generate( self, name ):
     	hour_now = int(time.strftime("%H"))
-    	if (hour_now < 12):
-        	template = random.choice( self.morning_templates )
-        else:
-        	template = random.choice( self.templates )
-        drink = random.choice( self.drinks )
+		if (hour_now < 12):
+			template = random.choice( self.morning_templates )
+		else:
+			template = random.choice( self.templates )
+		drink = random.choice( self.drinks )
         message_out = template.substitute(name=name, drink=drink)
         return "/me %s" % message_out
