@@ -214,7 +214,7 @@ class DeskBeerCommand( BaseCommand ):
                          ]
         self.morning_templates = [  Template("pours a cold $drink onto $name's cornflakes."),
                             		Template("wonders how $name made it to the office, offers them a $drink to make up for the trauma.")
-                         ]
+                         		 ]
         self.drinks = [ "Beer",
             "Ale",
             "Bongwater",
