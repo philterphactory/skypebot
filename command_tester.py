@@ -7,11 +7,11 @@ from commands import regretscommand
 from commands import ballcommand
 from commands import recapcommand
 from commands import spookcommand
-
+from commands import drinkcommand
 
 # stats
-test_command = spookcommand.SpookCommand()
-print test_command.generate( "shardcore" )
+#test_command = spookcommand.SpookCommand()
+#print test_command.generate( "shardcore" )
 
 # ponder
 #test_command = pondercommand.PonderCommand()
@@ -21,3 +21,6 @@ print test_command.generate( "shardcore" )
 #test_command = shoutoutcommand.ShoutoutCommand()
 #test_message = { "Body": "#shoutout to the berlin massive" }
 #print test_command.execute( test_message )
+
+test_command = drinkcommand.DeskBeerCommand()
+print test_command.generate("atom")
