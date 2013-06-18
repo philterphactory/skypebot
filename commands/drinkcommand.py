@@ -337,7 +337,7 @@ class DeskBeerCommand( BaseCommand ):
 
     def generate( self, name ):
     	hour_now = int(time.strftime("%H"))
-		if (hour_now < 12):
+		if hour_now < 12:
 			template = random.choice( self.morning_templates )
 		else:
 			template = random.choice( self.templates )
