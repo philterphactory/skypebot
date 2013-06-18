@@ -2,6 +2,7 @@
 
 from string import Template
 import random
+import time
 from commandbase import BaseCommand
 
 class DrinkCommand( BaseCommand ):
