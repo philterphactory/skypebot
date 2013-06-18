@@ -212,6 +212,9 @@ class DeskBeerCommand( BaseCommand ):
                             Template("has an Altoid to cover up beer breath."),
                             Template("advises $name to look for the hip flask in the desk drawer.")
                          ]
+        self.morning_templates = [  Template("pours a cold $drink onto $name's cornflakes."),
+                            		Template("wonders how $name made it to the office, offers them a $drink to make up for the trauma.")
+                         ]
         self.drinks = [ "Beer",
             "Ale",
             "Bongwater",
@@ -333,7 +336,11 @@ class DeskBeerCommand( BaseCommand ):
             "Fernet Branca" ]
 
     def generate( self, name ):
+    	hour_now = int(time.strftime("%H"))
+    	if (hour_now < 12):
+        	template = random.choice( self.morning_templates )
+        else:
+        	template = random.choice( self.templates )
         drink = random.choice( self.drinks )
-        template = random.choice( self.templates )
         message_out = template.substitute(name=name, drink=drink)
         return "/me %s" % message_out
