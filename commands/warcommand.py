@@ -8,7 +8,7 @@ class WarCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "war","bomb" ]
+        self.command_mappings = [ "war","bomb","riot" ]
         self.templates = [  Template("sends the drones in."),
                             Template("promotes his new war via social media."),
                             Template("bombs the fuck out of $name"),
