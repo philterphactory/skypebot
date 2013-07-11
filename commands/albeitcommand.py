@@ -50,7 +50,10 @@ class AlbeitCommand( BaseCommand ):
                     Template("tries to think in real-time. Fails"),
                     Template("flies into a tepid rage. Like an entitled chinchilla."),
                     Template("quotes himself."),
-                    Template("had his bot culled.")]
+                    Template("had his bot culled."),
+                    Template("constantly reconfigures its agent-world boundary"),
+                    Template("is not so much constructed from technology"),
+                    Template("is able to be open to the essence of technology")]
 
     def generate( self, name ):
         template = random.choice( self.templates )
