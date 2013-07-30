@@ -11,10 +11,10 @@ class ArtistCommand( BaseCommand ):
 
           self.command_mappings = [ "twat" ]
 
-          self.templates = [  Template("decides that $name is not an artist."),
-                    Template("decides that $name is an artist."),
-                    Template("decides that $name is 50% artist."),
-                    Template("decides that $name is 66.6% artist.")]
+          self.templates = [  Template("decides that $name is not a twat."),
+                    Template("decides that $name is an twat."),
+                    Template("decides that $name is 50% twat."),
+                    Template("decides that $name is 66.6% twat.")]
 
     def generate( self, name ):
         template = random.choice( self.templates )
