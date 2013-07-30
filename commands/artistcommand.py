@@ -9,7 +9,7 @@ class ArtistCommand( BaseCommand ):
           
           BaseCommand.__init__( self )
 
-          self.command_mappings = [ "artist" ]
+          self.command_mappings = [ "twat" ]
 
           self.templates = [  Template("decides that $name is not an artist."),
                     Template("decides that $name is an artist."),
