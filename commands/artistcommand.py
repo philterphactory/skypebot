@@ -12,7 +12,7 @@ class ArtistCommand( BaseCommand ):
           self.command_mappings = [ "twat" ]
 
           self.templates = [  Template("decides that $name is not a twat."),
-                    Template("decides that $name is an twat."),
+                    Template("decides that $name is a twat."),
                     Template("decides that $name is 50% twat."),
                     Template("decides that $name is 66.6% twat.")]
 
