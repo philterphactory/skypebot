@@ -424,7 +424,17 @@ class OdysseyCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "odyssey", "2001" ]
-        self.templates = [  Template("is afraid he can't let $name do that.")
+        self.templates = [  Template("is afraid he can't let $name do that."),
+                            Template("closes the pod-bay doors"),
+                            Template("can read lips"),
+                            Template("says \'my God, it's full of stars\'"),
+                            Template("hangs out in the space station for a bit"),
+                            Template("finds a monolith"),
+                            Template("turns into a giant space baby"),
+                            Template("insists on a surprising cameo by Leonard Rossiter"),
+                            Template("says \'I know that you and $name were planning to disconnect me, and I'm afraid that's something I cannot allow to happen.\'"),
+                            Template("sings Daisy Daisy")
+                            
                             ]
 
     def generate( self, name ):
