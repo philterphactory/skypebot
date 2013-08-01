@@ -424,7 +424,7 @@ class OdysseyCommand( BaseCommand ):
     def __init__(self):
         BaseCommand.__init__( self )
         self.command_mappings = [ "odyssey", "2001" ]
-        self.templates = [  Template("is afraid he can’t do that.")
+        self.templates = [  Template("is afraid he can’t let $name do that.")
                             ]
 
     def generate( self, name ):
