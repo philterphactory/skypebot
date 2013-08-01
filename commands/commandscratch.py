@@ -423,7 +423,7 @@ class OdysseyCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "odyssey", "2001" ]
+        self.command_mappings = [ "odyssey", "2001", "HAL" ]
         self.templates = [  Template("is afraid he can't let $name do that."),
                             Template("closes the pod-bay doors"),
                             Template("can read lips"),
