@@ -418,3 +418,17 @@ class HeadDeskCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+
+class OdysseyCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "odyssey", "2001" ]
+        self.templates = [  Template("is afraid he can’t do that.")
+                            ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out     
+ 
