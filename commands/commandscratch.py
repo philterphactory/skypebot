@@ -427,12 +427,12 @@ class OdysseyCommand( BaseCommand ):
         self.templates = [  Template("is afraid he can't let $name do that."),
                             Template("closes the pod-bay doors"),
                             Template("can read lips"),
-                            Template("says \'my God, it's full of stars\'"),
+                            Template("says \'my God, it\'s full of stars\'"),
                             Template("hangs out in the space station for a bit"),
                             Template("finds a monolith"),
                             Template("turns into a giant space baby"),
                             Template("insists on a surprising cameo by Leonard Rossiter"),
-                            Template("says \'I know that you and $name were planning to disconnect me, and I'm afraid that's something I cannot allow to happen.\'"),
+                            Template("says \'I know that you and $name were planning to disconnect me, and I\'m afraid that\'s something I cannot allow to happen.\'"),
                             Template("sings Daisy Daisy")
                             
                             ]
