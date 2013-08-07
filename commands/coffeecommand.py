@@ -10,7 +10,7 @@ class CoffeeCommand( BaseCommand ):
 
         BaseCommand.__init__( self )
         
-        self.command_mappings = [ "coffee" ]
+        self.command_mappings = [ "coffee", "cuppajoe" ]
 
         self.templates = [  Template("stares at $name, disregards the order and serves an home-roasted espresso ristretto."),
                             Template("rolls his eyes, grabs the Aeropress and pours $name $coffee"),
