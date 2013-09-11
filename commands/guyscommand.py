@@ -3,7 +3,7 @@ from string import Template
 import random
 from commandbase import BaseCommand
 
-class GlitchCommand( BaseCommand ):
+class GuysCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
