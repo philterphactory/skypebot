@@ -14,6 +14,7 @@ class DivaCommand( BaseCommand ):
 
         self.templates = [  Template("flounces out."),
                             Template("promises to punch $name in the face."),
+                            Template("posts a shit in to the bar."),
                             Template("learnt all his best moves from !purps")
                             ]
                             
