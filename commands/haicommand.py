@@ -26,7 +26,8 @@ class HaiCommand( BaseCommand ):
 							Template("welcomes $name, and opens the hidden door to the gambling room."), #OK
 							Template("forcibly ejects another patron as they sit in $name's usual spot."),
 							Template("calls the law. This $name character looks like they're up to no good."),
-							Template("looks up as $name enters, checks their name off his Special List")
+							Template("looks up as $name enters, checks their name off his Special List"),
+							Template("runs away, screaming 'not again!'. He remembers $name from his Questionable Past.")
 							]
 							
 	def generate( self, name ):
