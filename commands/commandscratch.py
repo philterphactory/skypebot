@@ -442,3 +442,19 @@ class OdysseyCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out     
  
+class ApplauseCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.templates = [  Template("puts his hands together for $name."),
+                            Template("stares $name dead in the eye and claps. Very. Fucking. Slowly."),
+                            Template("pricks up his ears as a light round of applause patters around the bar for $name, like in cricket."),
+                            Template("leads a Mexican wave for $name."),
+                            Template("chucks peanuts at $name from the cheap seats.")]
+        self.command_mappings = [ "applause", "applaud", "clap", "golfclap" ]
+        self.enabled = True # change to True (or just delete this line) to enable a command
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
