@@ -8,6 +8,7 @@ from commands import ballcommand
 from commands import recapcommand
 from commands import spookcommand
 from commands import drinkcommand
+from commands import plotcommand
 
 # stats
 #test_command = spookcommand.SpookCommand()
@@ -22,5 +23,5 @@ from commands import drinkcommand
 #test_message = { "Body": "#shoutout to the berlin massive" }
 #print test_command.execute( test_message )
 
-test_command = drinkcommand.DeskBeerCommand()
+test_command = plotcommand.PlotCommand()
 print test_command.generate("atom")
