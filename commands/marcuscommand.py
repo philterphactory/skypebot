@@ -63,6 +63,7 @@ class MarcusCommand( BaseCommand ):
 					Template("forgets about the bar"),
 					Template("suggests we make something"),
 					Template("goes to work on his !tiny farmyard."),
+					Template("doesn't come round here no more."),
 					Template("ponders the notion he could be an !adman.")
 					]
 							

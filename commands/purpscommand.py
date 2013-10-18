@@ -29,6 +29,12 @@ class PurpsCommand( BaseCommand ):
                             Template("is harrassing about his invoices."),
                             Template("is photographing strangers asleep."),
                             Template("dolor sit amet, consectetur adipiscing elit."),
+                            Template("redacts his last statement."),
+                            Template("makes peace."),
+                            Template("sells on his hit."),
+                            Template("has a !diva and quits the bar."),
+                            Template("gives !squires a !tip"),
+                            Template("looks a bit like !squires."),
                             Template("writes words for money, not !love.") ]
                             
     def generate( self, name ):

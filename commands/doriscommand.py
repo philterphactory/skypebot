@@ -28,9 +28,15 @@ class DorisCommand( BaseCommand ):
                             Template("invokes the no-dying clause."),
                             Template("writes some words."),
                             Template("reminds you of the Trojan Unicorn."),
+                            Template("makes up a new term."),
+                            Template("goes to the !tiny wooden pub"),
+                            Template("gets everybody drunk."),
+                            Template("hasn't had enough sleep."),
+                            Template("is best mates with Oscar"),
+                            Template("knows everyone."),
                             Template("likes the antlers.")
                             
- ]
+                            ]
 
     def generate( self, name ):
         template = random.choice( self.templates )

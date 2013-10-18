@@ -58,6 +58,8 @@ class SatanCommand( BaseCommand ):
                             Template("rolls up."),
                             Template("makes peace"),
                             Template("wears the diva mic"),
+                            Template("buggers off East, without telling anyone."),
+                            Template("sends the !kaiser a late-night text."),
                             Template("revises history")
                             ]
                             
