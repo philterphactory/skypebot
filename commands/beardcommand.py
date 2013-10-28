@@ -13,7 +13,7 @@ class BeardCommand( BaseCommand ):
         
     def generate( self, name ):
         beards=['a Chin curtain','a Chinstrap beard','a French cut goatee','some Friendly muttonchops','a Fu Manchu',
-'a Goat patch','a Goatee','a German Goatee','a Handlebar moustache','a Horseshoe Moustache','some Mutton chops','some Sidewhiskers','a Neckbeard','a Pencil moustache','a Shenandoah','Sideburns','a Soul patch','a Toothbrush moustache','a Van Dyke beard']
+'a Goat patch','a Goatee','a German Goatee','a Handlebar moustache','a Horseshoe Moustache','some Mutton chops','some Sidewhiskers','a Neckbeard','a Pencil moustache','a Shenandoah','Sideburns','a Soul patch','a Toothbrush moustache','a Van Dyke beard','some bumfluff, like a Ruby developer']
         b=random.choice(beards)
         template = random.choice( self.templates )
         message_out = template.substitute(name=name,btype=b)
