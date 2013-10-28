@@ -8,7 +8,7 @@ from commands import ballcommand
 from commands import recapcommand
 from commands import spookcommand
 from commands import drinkcommand
-from commands import plotcommand
+from commands import beardcommand
 
 # stats
 #test_command = spookcommand.SpookCommand()
@@ -23,5 +23,5 @@ from commands import plotcommand
 #test_message = { "Body": "#shoutout to the berlin massive" }
 #print test_command.execute( test_message )
 
-test_command = plotcommand.PlotCommand()
+test_command = beardcommand.BeardCommand()
 print test_command.generate("atom")
