@@ -134,7 +134,7 @@ class BotThread( queuedthread.QueuedThread ):
             logging.info( "Starting up Twitter connector..." )
             self.twitter_connector = twitterconnector.TwitterConnectorThread()
             self.twitter_connector.creds_path = "twitter_creds"
-            self.twitter_connector.track_keywords = ["lndlrd"]
+            self.twitter_connector.track_keywords = ["@lndlrd"]
             self.twitter_connector.start()
 
         # import commands
