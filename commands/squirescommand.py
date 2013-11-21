@@ -34,6 +34,11 @@ class SquiresCommand( BaseCommand ):
             Template("is all about the new futures"),                                                        
             Template("loves a bit of co-development"),                                                        
             Template("speaks welsh"),                                                        
+            Template("has a thing about homer"),
+            Template("is town, not gown"),
+            Template("has a lovely view of the river"),
+            Template("responds to a tender"),
+            Template("is frustrated by all the forms"),
             Template("says 'boro da'"),                                                        
             Template("sings 'Mae gen i griw hyfryd o cnau coco'")
                             ]
