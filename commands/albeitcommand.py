@@ -9,7 +9,7 @@ class AlbeitCommand( BaseCommand ):
           
           BaseCommand.__init__( self )
 
-          self.command_mappings = [ "albeit" ]
+          self.command_mappings = [ "albeit", "infomorph", "academic" ]
 
           self.templates = [  Template("interrogates the human infomorph aesthetic."),
                     Template("!ponders if Blade Runnered is a term"),
