@@ -133,7 +133,10 @@ class HoyleCommand( BaseCommand ):
         self.templates = [  Template("gets a bit ranty."),
                             Template("does a !satan on !satan."),
                             Template("causes trouble."),
-                            Template("twiddles knobs.")
+                            Template("twiddles knobs."),
+                            Template("throws a pot."),
+                            Template("makes the !client wait."),
+                            Template("releases the stick insects.")
                             ]
 
     def generate( self, name ):

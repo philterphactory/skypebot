@@ -43,6 +43,7 @@ class PoveyCommand( BaseCommand ):
                             Template("goes for a long bike ride with just his thoughts."),
                             Template("is half the man he used to be."),
                             Template("hawks for moo."),
+                            Template("doesn't like London."),
                             Template("instagrams his rhubarb creme brulee"),
                             Template("fucks off and buys some obscure 7 inches."),                                                        
                             Template("steals some !cheese from a baby"),                                                        
