@@ -32,6 +32,6 @@ class TaskrabbitCommand( BaseCommand ):
         task = random.choice( self.task )
         money = random.choice( self.money )
         template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
+        message_out = template.substitute(name=name money=money, task=task)
         return "/me %s" % message_out
 
