@@ -12,8 +12,8 @@ class TaskrabbitCommand( BaseCommand ):
 
         self.command_mappings = [ "taskrabbit" ]
 
-        self.templates = [  Template("gives $name $money to $task"),
-                            Template("something task something rabbit")
+        self.templates = [  Template("gives $name $money to $task."),
+                            Template("wonders what $name would need to do $task.")
                             ]
                             
         self.task = [ "fucking sort it out",
