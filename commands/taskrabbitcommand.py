@@ -12,11 +12,25 @@ class TaskrabbitCommand( BaseCommand ):
 
         self.command_mappings = [ "taskrabbit" ]
 
-        self.templates = [  Template("!povey made me do it"),
+        self.templates = [  Template("gives $name $money to $task"),
                             Template("something task something rabbit")
                             ]
                             
+        self.task = [ "fucking sort it out",
+            "drop his kegs",
+            "slap the shit out of AB",
+            "touch it",
+            "get his laundry" ]
+            
+        self.money = [ "a quid",
+            "a handful of dog meat",
+            "a pound of !bacon",
+            "two !drinks",
+            "a handjob" ]
+                            
     def generate( self, name ):
+        task = random.choice( self.task )
+        money = random.choice( self.money )
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
