@@ -13,18 +13,32 @@ class TaskrabbitCommand( BaseCommand ):
         self.command_mappings = [ "taskrabbit" ]
 
         self.templates = [  Template("gives $name $money to $task."),
-                            Template("wonders what $name would need to do $task.")
+                            Template("wonders what $name would need to $task.")
                             ]
                             
         self.task = [ "fucking sort it out",
             "drop his kegs",
             "slap the shit out of AB",
             "touch it",
+            "thump a poor",
+            "vote Tory",
+            "end it all",
+            "put kettle on",
+            "!doit",
+            "scrape the Daily Mail for love",
+            "solve the Irish problem",
+            "touch it",
             "get his laundry" ]
             
         self.money = [ "a quid",
             "a handful of dog meat",
             "a pound of !bacon",
+            "a bitcoin",
+            "a litecoin",
+            "a promise",
+            "a favour",
+            "a bunch of roses",
+            "some goat skin",
             "two !drinks",
             "a handjob" ]
                             
