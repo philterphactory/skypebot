@@ -8,7 +8,7 @@ class PoveyCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "povey", "owl" ]
+        self.command_mappings = [ "povey", "owl", "socks" ]
         self.templates = [  Template("thinks $name completes him."),
                             Template("nurtures a hangover."),
                             Template("organises a conference"),
@@ -47,7 +47,9 @@ class PoveyCommand( BaseCommand ):
                             Template("instagrams his rhubarb creme brulee"),
                             Template("fucks off and buys some obscure 7 inches."),                                                        
                             Template("steals some !cheese from a baby"),                                                        
-                            Template("calls $name a divvy")
+                            Template("calls $name a divvy"),                                                        
+                            Template("admires $name's !socks"),                                                      
+                            Template("gets interviewed about his !socks by the BBC")
                             ]
                             
     def generate( self, name ):
