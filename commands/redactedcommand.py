@@ -13,10 +13,10 @@ class RegretsCommand( BaseCommand ):
         self.command_mappings = [ "redact","sekrit" ] 
 
 
-        self.templates = [  Template("doesn't want anyone to know about his !deskcrack habit"),
-                            Template("calls someone a !cunt then tries to hide it"),
-                            Template("is funny for about a minute"),
-                            Template("is covering up something")
+        self.templates = [  Template("doesn't want $name to know about his !deskcrack habit"),
+                            Template("calls $name a !cunt then tries to hide it"),
+                            Template("thinks $name is funny for about a minute"),
+                            Template("thinks $name covering up something")
                             ]
                             
     def generate( self, name ):
