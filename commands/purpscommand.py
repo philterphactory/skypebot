@@ -41,7 +41,8 @@ class PurpsCommand( BaseCommand ):
                             Template("has a !diva and quits the bar."),
                             Template("gives !squires a !tip"),
                             Template("looks a bit like !squires."),
-                            Template("writes words for money, not !love.") ]
+                            Template("writes words for money, not !love."),
+                            Template("is !redacted") ]
                             
     def generate( self, name ):
         template = random.choice( self.templates )
