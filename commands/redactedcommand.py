@@ -10,7 +10,7 @@ class RegretsCommand( BaseCommand ):
 
         BaseCommand.__init__( self )
         
-        self.command_mappings = [ "redacted","sekrit" ] 
+        self.command_mappings = [ "redact","sekrit" ] 
 
 
         self.templates = [  Template("doesn't want anyone to know about his !deskcrack habit"),
