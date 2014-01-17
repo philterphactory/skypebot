@@ -18,23 +18,6 @@ class ExampleCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
-
-class BrightonCommand( BaseCommand ):
-
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.templates = [  Template("lobs a hacky sack at $name."),
-                            Template("makes some !art."),
-                            Template("likes it better in the winter, when all the London bastards have gone home."),
-                            Template("sits on the beach"),
-                            Template("puts some stuff in a !tiny box in a pub."),
-                            Template("sabotages the railway line to London.") ]
-        self.command_mappings = [ "brighton" ]
-
-    def generate( self, name ):
-        template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
-        return "/me %s" % message_out
         
 class TrialCommand( BaseCommand ):
 
@@ -62,7 +45,6 @@ class TrialCommand( BaseCommand ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
-
 
                 
 class MakeItSoCommand( BaseCommand ):
@@ -179,126 +161,6 @@ class PeterCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
-
-class GoonCommand( BaseCommand ):
-
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.command_mappings = [ "goon", "bouncer" ]
-        self.templates = [  Template("leans on $name."),
-                            Template("kneecaps $name."),
-                            Template("asks $name to take a seat."),
-                            Template("cracks his knuckles."),
-                            Template("flashes a toothless grin at $name."),
-                            Template("doesn't have a neck."),
-                            Template("rotates his head, crunching his bones."),
-                            Template("is wearing a donkey jacket."),
-                            Template("tells $name to behave."),
-                            Template("emails $name a toe."),
-                            Template("can't be bought."),
-                            Template("is selling DVD-players round the back of the pub."),
-                            Template("thinks $name wants to 'ave a bit of fun."),
-                            Template("posts a naked picture of $name to their family."),
-                            Template("knows a thing or two about $name."),
-                            Template("peels an orange, very bloody slowly."),
-                            Template("bundles $name into the boot of his Vauxhall."),
-                            Template("has a picture of $name's family."),
-                            Template("thinks $name has a nice place here. Be a shame if anything happened to it."),
-                            Template("suggests that $name should know what's good for them."),
-                            Template("mutters something vaguely menacing in a gravelly voice to $name.")
-                            ]
-
-    def generate( self, name ):
-        template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
-        return "/me %s" % message_out
-
-class LoonCommand( BaseCommand ):
-
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.command_mappings = [ "loon", "mad" ]
-        self.templates = [  Template("wears a foil !hat."),
-                            Template("has mercury poisoning."),
-                            Template("believes David Icke."),
-                            Template("talks to himself."),
-                            Template("hasn't washed for weeks."),
-                            Template("doesn't trust the barge folk."),
-                            Template("has all his money in carrier bags under the bed."),
-                            Template("is concerned about all the lizards."),
-                            Template("is carrying a copy of Catcher In The Rye."),
-                            Template("cuts out bits of newspapers for his scrapbooks."),
-                            Template("is still listening to !gangnam."),
-                            Template("is late for a !tea party."),
-                            Template("thinks $name has stolen his thoughts."),
-                            Template("is called Bobbin. Are you my mother?")
-                            ]
-
-    def generate( self, name ):
-        template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
-        return "/me %s" % message_out
-
-class MynewCommand( BaseCommand ):
-
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.command_mappings = [ "mynew", "new" ]
-        self.templates = [  Template("understands that $name's new $startup is called \"$word\".") ]
-        self.startup = [ "startup",
-            "thing",
-            "product",
-            "habit",
-            "position",
-            "desire",
-            "beau" ]
-
-        self.word = [ "Social Media Narcissism",
-            "Guru Zentrum",
-            "Corporate Density",
-            "Spatial Complexity",
-            "Loving Spoonful",
-            "Braun Zucker",
-            "Algorithmic Data Massage",
-            "New Aesthetic Fashion",
-            "Financial Jiu Jitsu",
-            "Culture Jam",
-            "Cube Farm",
-            "Beanbag Office",
-            "Stress Puppy",
-            "Food Stamps",
-            "Seagull Management",
-            "Ninja Central",
-            "Handsome Adult",
-            "Bereaved Objects",
-            "Absolute Nothingness",
-            "Don\'t ruin a good story with numbers!",
-            "Pipe Bomb",
-            "True Say",
-            "!startup",
-            "Handspeed Record",
-            "Stealth Made",
-            "Broken Windows",
-            "Me or the Chief",
-            "Shitfaced & Reeling",
-            "WAZZOCK, Inc.",
-            "Dance Syndrome",
-            "Adam Hoyle's Massive !Anus",
-            "Engagement Metrics",
-            "Barry",
-            "Piss und Shit",
-            "Creative Technologisms",
-            "Dedicated Solutioneering",
-            "Don\'t Call It a !startup",
-            "Blended Synergy",
-            "Billy Cosby Sweater Design" ]
-
-    def generate( self, name ):
-        startup = random.choice( self.startup )
-        word = random.choice( self.word )
-        template = random.choice( self.templates )
-        message_out = template.substitute(word=word,name=name, startup=startup)
-        return "/me %s" % message_out
     
 class ChristmasCommand( BaseCommand ):
 
@@ -321,26 +183,8 @@ class ChristmasCommand( BaseCommand ):
     def generate( self, name ):
         template = random.choice( self.templates )
         message_out = template.substitute(name=name)
-        return "/me %s" % message_out
-            
-            
-class SxeCommand( BaseCommand ):
+        return "/me %s" % message_out            
 
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.command_mappings = [ "sxe", "edge" ]
-        self.templates = [  Template("is listening to Minor Threat."),
-                            Template("draws Xs on the back of his hands."),
-                            Template("slaps the cigarette out of $name's mouth."),
-                            Template("is drinking Pepsi."),
-                            Template("advocates a drug-free existence."),
-                            Template("is wearing some awesome Nike dunks."),
-                            ]
-
-    def generate( self, name ):
-        template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
-        return "/me %s" % message_out 
 
 class FFSCommand( BaseCommand ):
 
@@ -368,30 +212,6 @@ class KickCommand( BaseCommand ):
                             Template("puts $name in the bins"),
                             Template("frogmarches $name off the premises."),
                             Template("shakes his head at $name.")
-                            ]
-
-    def generate( self, name ):
-        template = random.choice( self.templates )
-        message_out = template.substitute(name=name)
-        return "/me %s" % message_out
-        
-
-class SacrumCommand( BaseCommand ):
-
-    def __init__(self):
-        BaseCommand.__init__( self )
-        self.command_mappings = [ "dovey","german" ]
-        self.templates = [  Template("sends $name much warmth."),
-                            Template("is European man with skills in advertising."),
-                            Template("has his own pencils."),
-                            Template("got in to funky advertising agency."),
-                            Template("sharpen pencil and top-up mobile phone."),
-                            Template("is availability on Wednesdays and CVon request."),
-                            Template("applies for a job at W+K."),
-                            Template("is sending out the right charges for right customer."),
-                            Template("is thanking you from his bottom."),
-                            Template("has brand warmness."),
-                            Template("seek advices from key figures in marketing arena.")
                             ]
 
     def generate( self, name ):
