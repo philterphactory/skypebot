@@ -19,6 +19,22 @@ class ExampleCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
 
+class BrightonCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.templates = [  Template("lobs a hacky sack at $name."),
+                            Template("makes some !art."),
+                            Template("likes it better in the winter, when all the London bastards have gone home."),
+                            Template("sits on the beach"),
+                            Template("puts some stuff in a !tiny box in a pub."),
+                            Template("sabotages the railway line to London.") ]
+        self.command_mappings = [ "brighton" ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
         
 class TrialCommand( BaseCommand ):
 
