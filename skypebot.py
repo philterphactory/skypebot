@@ -1,3 +1,5 @@
+
+# coding=UTF-8
 import Skype4Py
 import time
 import pkgutil
@@ -214,7 +216,8 @@ class BotThread( queuedthread.QueuedThread ):
                                         for commandstring in command.command_mappings:
                                             commandbang = "!" + commandstring
                                             commandhash = "#" + commandstring
-                                            if commandbang in bl or commandhash in bl:
+                                            commandgringo = "¡" + commandstring
+                                            if commandbang in bl or commandhash in bl or commandgringo in bl:
                                                 print "Excute command %s" % commandstring
                                                 # if command is giftable
                                                 if command.gifting_enabled and ENABLE_GIFTS:
