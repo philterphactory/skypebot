@@ -216,8 +216,7 @@ class BotThread( queuedthread.QueuedThread ):
                                         for commandstring in command.command_mappings:
                                             commandbang = "!" + commandstring
                                             commandhash = "#" + commandstring
-                                            commandgringo = u'¡' + unicode(commandstring, "utf-8")
-                                            if commandbang in bl or commandhash in bl or commandgringo in unicode(bl, "utf-8"):
+                                            if commandbang in bl or commandhash in bl:
                                                 print "Excute command %s" % commandstring
                                                 # if command is giftable
                                                 if command.gifting_enabled and ENABLE_GIFTS:
