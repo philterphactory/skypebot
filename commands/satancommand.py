@@ -10,7 +10,7 @@ class SatanCommand( BaseCommand ):
 
         BaseCommand.__init__( self )
 
-        self.command_mappings = [ "satan", "dave", "lobster", "stan" ]
+        self.command_mappings = [ "satan", "dave", "lobster", "stan", "lucy" ]
 
         self.templates = [  Template("considers the infomorph aesthetic."),
                             Template("draws a martini."),
