@@ -22,7 +22,7 @@ class ProgCommand( BaseCommand ):
         message_out = template.substitute(name=name)
         return "/me %s" % message_out
  
- class JazzCommand( BaseCommand ):
+class JazzCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
@@ -34,7 +34,10 @@ class ProgCommand( BaseCommand ):
                             Template("is basically incomprehensible."),
                             Template("goes all widdly widdly widdly."),
                             Template("is properly wigging out."),
-                            Template("has a double bass.")
+                            Template("has a double bass."),
+                            Template("is unlearning his time signatures."),
+                            Template("tears a new one with his plastic sax."),
+                            Template("might be having a stroke.")
                              ]
 
     def generate( self, name ):
