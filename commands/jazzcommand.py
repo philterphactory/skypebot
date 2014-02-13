@@ -15,6 +15,15 @@ class JazzCommand( BaseCommand ):
                             Template("plays it, but will tell you what it is later."),
                             Template("is the vernacular of the human soul."),
                             Template("thinks that if you have to ask what something is, you'll never know."),
+                            Template("plays all the wrong notes."),
+                            Template("solos for hours."),
+                            Template("thinks he's Miles Davis, but is actually more Windsor Davis"),
+                            Template("bores everyone."),
+                            Template("plays something in 5/4 for the hell of it."),
+                            Template("thinks brass instruments are acceptable."),
+                            Template("strokes his !beard"),
+                            Template("is a little bit behind the beat"),
+                            Template("fucks around for a bit, and calls it !jazz"),
                             Template("improvises with $name.")]
 
     def generate( self, name ):
