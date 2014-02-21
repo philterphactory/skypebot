@@ -8,7 +8,7 @@ class PoveyCommand( BaseCommand ):
 
     def __init__(self):
         BaseCommand.__init__( self )
-        self.command_mappings = [ "povey", "owl"]
+        self.command_mappings = [ "povey", "owl", "poves", "povester"]
         self.templates = [  Template("thinks $name completes him."),
                             Template("nurtures a hangover."),
                             Template("organises a conference"),
