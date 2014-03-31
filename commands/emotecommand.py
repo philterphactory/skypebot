@@ -27,7 +27,7 @@ class EmoteCommand( BaseCommand ):
                       '(toivo)','(zilmer)','(bug)','(clock)',
                       '(y)','(n)','(handshake)','(h)','(u)','(e)','(f)','(rain)','(sun)',
                       '(o)','(music)','(film)','(mp)','(coffee)','(pizza)','(cash)','(flex)',
-                      '(cake)','(beer)','(d)','(ninja)','(dance)','(*)','(nerd)']
+                      '(cake)','(beer)','(d)','(ninja)','(dance)','(*)',]
 
 
     def generate( self, name ):
