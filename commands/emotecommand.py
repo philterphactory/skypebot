@@ -32,7 +32,7 @@ class EmoteCommand( BaseCommand ):
 
     def generate( self, name ):
 
-        n=random.randrange(10)+3
+        n=random.randrange(10)+1
 
         s="emotes "
         for e in range(0,n):
