@@ -8,7 +8,8 @@ from commands import ballcommand
 from commands import recapcommand
 from commands import spookcommand
 from commands import drinkcommand
-from commands import bergcommand
+from commands import emotecommand
+
 
 # stats
 #test_command = spookcommand.SpookCommand()
@@ -23,5 +24,5 @@ from commands import bergcommand
 #test_message = { "Body": "#shoutout to the berlin massive" }
 #print test_command.execute( test_message )
 
-test_command = bergcommand.BergCommand()
+test_command = emotecommand.EmoteCommand()
 print test_command.generate("atom")
