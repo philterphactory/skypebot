@@ -23,6 +23,9 @@ class CockCommand( BaseCommand ):
                             Template("flashes $name."),
                             Template("dips it in $name's !drink."),
                             Template("rubs one out."),
+                            Template("makes a really fucking pointless (and ill thought out) manifesto website and gets !shard !ranty"),
+                            Template("launches a product which is, in truth, just a really pointless website !anger"),
+                            Template("sings a song about how damn awesome he is"),
                             ]
 
         self.pre_modifiers = [ "half a",
