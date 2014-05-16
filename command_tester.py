@@ -8,7 +8,7 @@ from commands import ballcommand
 from commands import recapcommand
 from commands import spookcommand
 from commands import drinkcommand
-from commands import bingocommand
+from commands import cryptocommand
 
 
 # stats
@@ -24,5 +24,5 @@ from commands import bingocommand
 #test_message = { "Body": "#shoutout to the berlin massive" }
 #print test_command.execute( test_message )
 
-test_command = bingocommand.BingoCommand()
+test_command = cryptocommand.CryptoCommand()
 print test_command.generate("atom")
