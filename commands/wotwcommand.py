@@ -33,7 +33,7 @@ class WotwCommand( BaseCommand ):
           message_out=report
            
 
-          return "/me %s" % message_out
+          return "/me sings \"%s\"" % message_out
 
      def execute( self, message ):
           body = message.Body
