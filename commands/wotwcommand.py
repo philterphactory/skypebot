@@ -5,7 +5,7 @@ import urllib
 import urllib2
 from commandbase import BaseCommand
 
-class PlotCommand( BaseCommand ):
+class WotwCommand( BaseCommand ):
 
      def __init__(self):
           BaseCommand.__init__( self )
