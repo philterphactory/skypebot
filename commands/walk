@@ -1,0 +1,25 @@
+# coding=UTF-8
+from string import Template
+import random
+from commandbase import BaseCommand
+
+class WalkCommand( BaseCommand ):
+
+    def __init__(self):
+        BaseCommand.__init__( self )
+        self.command_mappings = [ "walk","stroll","consultant" ]
+        self.templates = [  Template("goes on a walk with $name."),
+                            Template("advises $name whilst meandering with a babbling brook."), 
+                            Template("shares a joke with $name, smells the fresh country air."), 
+                            Template("charges $name €800pd to join him on a hike."), 
+                            Template("ate all the Nature Valley oat bars."), 
+                            Template("spills his thermos of soup of $name's Moleskine."), 
+                            Template("stood in shit."), 
+                            Template("points at something in nature and proclaims it a business metaphor."), 
+                            Template("blogs about a wander."), 
+                            Template("throws a !drink in $name's face") ]
+
+    def generate( self, name ):
+        template = random.choice( self.templates )
+        message_out = template.substitute(name=name)
+        return "/me %s" % message_out
