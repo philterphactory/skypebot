@@ -1,10 +1,10 @@
-import Queue
 from hookserver import HookServerMessage, HookServerThread
 import slackbot
 from messages import housekeeping
 import subprocess
 import logging
 import time
+import sys
 
 # set up logging
 logging.basicConfig( filename="slackbot.log",
@@ -29,13 +29,16 @@ while retries > 0:
         pass
     retries -=1
     if hook_server is None:
-        wait( 10 )
+        time.sleep( 10 )
     else:
         break
 if hook_server is None:
     sys.exit()
 hook_server.portnumber = 31337
 hook_server.start()
+
+# monitor this branch only
+GIT_BRANCH = "master"
 
 # run bot
 try:
